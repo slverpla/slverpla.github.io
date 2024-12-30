@@ -19,7 +19,9 @@ const LogoWithText = (props: ILogoProps) => {
           height="54"
           className="-mr-1.5 w-10 sm:w-12 md:w-[54px]"
         />
-        <span className="-ml-1 translate-y-1">{AppConfig.logo_text}</span>
+        <span className="-ml-0.5 translate-y-1 sm:-ml-1">
+          {AppConfig.logo_text}
+        </span>
       </span>
     );
   }
