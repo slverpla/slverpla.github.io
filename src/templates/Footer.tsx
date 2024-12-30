@@ -51,22 +51,22 @@ const Footer = () => (
         }
       >
         <li>
-          <Link href="/" className="text-sm sm:text-base">
+          <Link href="/" className="text-xs sm:text-sm">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/get-plantative" className="text-sm sm:text-base">
+          <Link href="/get-plantative" className="text-xs sm:text-sm">
             Get the App
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-sm sm:text-base">
+          <Link href="/" className="text-xs sm:text-sm">
             Newsletter
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-sm sm:text-base">
+          <Link href="/" className="text-xs sm:text-sm">
             About
           </Link>
         </li>

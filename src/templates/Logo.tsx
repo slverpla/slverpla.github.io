@@ -9,7 +9,7 @@ const LogoWithText = (props: ILogoProps) => {
   if (props.xl) {
     return (
       <span
-        className="inline-flex items-center text-3xl font-semibold"
+        className="inline-flex items-center text-xl font-semibold sm:text-2xl md:text-3xl"
         style={{ color: '#1c5f3e' }}
       >
         <img
@@ -17,7 +17,7 @@ const LogoWithText = (props: ILogoProps) => {
           alt={`${AppConfig.site_name} logo`}
           width="54"
           height="54"
-          className="-mr-1.5"
+          className="-mr-1.5 w-10 sm:w-12 md:w-[54px]"
         />
         <span className="-ml-1 translate-y-1">{AppConfig.logo_text}</span>
       </span>
@@ -25,7 +25,7 @@ const LogoWithText = (props: ILogoProps) => {
   }
   return (
     <span
-      className="inline-flex items-center text-xl font-semibold"
+      className="inline-flex items-center text-lg font-semibold sm:text-xl"
       style={{ color: '#1c5f3e' }}
     >
       <img
@@ -33,7 +33,7 @@ const LogoWithText = (props: ILogoProps) => {
         alt={`${AppConfig.site_name} logo`}
         width="34"
         height="34"
-        className="-mr-0.5"
+        className="-mr-0.5 w-7 sm:w-[34px]"
       />
       <span className="-ml-1 translate-y-1">{AppConfig.logo_text}</span>
     </span>
