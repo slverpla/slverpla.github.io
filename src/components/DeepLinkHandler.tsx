@@ -1,6 +1,6 @@
 // components/DeepLinkHandler.tsx
 import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface DeepLinkHandlerProps {
   appScheme: string;
@@ -20,27 +20,37 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
   storeUrls,
 }) => {
   const router = useRouter();
+  const hasAttemptedRedirect = useRef(false);
 
   useEffect(() => {
-    if (!isMobile()) {
-      return undefined; // Explicit return for non-mobile case
+    if (!isMobile() || hasAttemptedRedirect.current) {
+      return undefined;
     }
 
+    hasAttemptedRedirect.current = true;
     const path = router.asPath.startsWith('/')
       ? router.asPath.slice(1)
       : router.asPath;
+    const isAndroid = /Android/i.test(navigator.userAgent);
     const appUrl = `${appScheme}://${path}`;
 
-    // Try opening app first
-    window.location.href = appUrl;
+    // Create a hidden iframe for the app attempt
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = appUrl;
+    document.body.appendChild(iframe);
 
-    // If app doesn't open, redirect to store after delay
     const timeoutId = setTimeout(() => {
-      const isAndroid = /Android/i.test(navigator.userAgent);
+      document.body.removeChild(iframe);
       window.location.href = isAndroid ? storeUrls.android : storeUrls.ios;
     }, 1000);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      clearTimeout(timeoutId);
+      if (document.body.contains(iframe)) {
+        document.body.removeChild(iframe);
+      }
+    };
   }, [router.asPath, appScheme, storeUrls]);
 
   return null;
