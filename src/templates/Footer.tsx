@@ -51,16 +51,24 @@ const Footer = () => (
         }
       >
         <li>
-          <Link href="/">Home</Link>
+          <Link href="/" className="text-sm sm:text-base">
+            Home
+          </Link>
         </li>
         <li>
-          <Link href="/get-plantative">Get the App</Link>
+          <Link href="/get-plantative" className="text-sm sm:text-base">
+            Get the App
+          </Link>
         </li>
         <li>
-          <Link href="/">Newsletter</Link>
+          <Link href="/" className="text-sm sm:text-base">
+            Newsletter
+          </Link>
         </li>
         <li>
-          <Link href="/">About</Link>
+          <Link href="/" className="text-sm sm:text-base">
+            About
+          </Link>
         </li>
       </CenteredFooter>
     </Section>

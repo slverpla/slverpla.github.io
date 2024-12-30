@@ -11,8 +11,11 @@ const DownloadSection = () => (
         <h2 className="whitespace-pre-line text-center text-5xl font-bold leading-[1.1] text-gray-900 md:text-left md:text-6xl md:leading-hero">
           Get Plantative{'\n'}for iOS/Android
         </h2>
-        <div className="flex flex-row gap-4">
-          <Link href="https://apps.apple.com" className="w-48">
+        <div className="flex flex-row gap-2 sm:gap-4">
+          <Link
+            href="https://apps.apple.com"
+            className="w-32 sm:w-40 md:w-44 lg:w-48"
+          >
             <Image
               src="/assets/images/appstore.png"
               alt="Download on App Store"
@@ -21,7 +24,10 @@ const DownloadSection = () => (
               className="h-auto w-full"
             />
           </Link>
-          <Link href="https://play.google.com" className="w-48">
+          <Link
+            href="https://play.google.com"
+            className="w-32 sm:w-40 md:w-44 lg:w-48"
+          >
             <Image
               src="/assets/images/googleplay.png"
               alt="Get it on Google Play"

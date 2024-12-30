@@ -7,7 +7,7 @@ import { LogoWithText } from './Logo';
 const GetAppHeader = () => (
   <Section yPadding="py-6">
     <NavbarTwoColumns logo={<LogoWithText xl />}>
-      <div className="pr-2 md:pr-8">
+      <div className="pr-1 md:pr-8">
         <ul className="flex items-center space-x-8">
           <li>
             <Link href="/">Home</Link>
