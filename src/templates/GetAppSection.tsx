@@ -14,7 +14,7 @@ const DownloadSection = () => (
         <div className="flex flex-row gap-2 sm:gap-4">
           <Link
             href="https://apps.apple.com"
-            className="w-32 sm:w-40 md:w-44 lg:w-48"
+            className="w-36 sm:w-40 md:w-44 lg:w-48"
           >
             <Image
               src="/assets/images/appstore.png"
@@ -26,7 +26,7 @@ const DownloadSection = () => (
           </Link>
           <Link
             href="https://play.google.com"
-            className="w-32 sm:w-40 md:w-44 lg:w-48"
+            className="w-36 sm:w-40 md:w-44 lg:w-48"
           >
             <Image
               src="/assets/images/googleplay.png"
