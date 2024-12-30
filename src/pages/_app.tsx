@@ -12,6 +12,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
         android: 'https://slverpla.github.io/', // Replace with your Android app URL
         ios: 'https://slverpla.github.io/', // Replace with your iOS app URL
       }}
+      excludedPaths={['/', '/get-plantative']}
     />
     <Component {...pageProps} />
   </>

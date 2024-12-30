@@ -8,6 +8,8 @@ interface DeepLinkHandlerProps {
     android: string;
     ios: string;
   };
+  excludedPaths?: string[];
+  allowedPaths?: string[];
 }
 
 const isMobile = () => {
@@ -18,11 +20,34 @@ const isMobile = () => {
 export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
   appScheme,
   storeUrls,
+  excludedPaths = [],
+  allowedPaths,
 }) => {
   const router = useRouter();
   const hasAttemptedRedirect = useRef(false);
 
   useEffect(() => {
+    // Ensure we have a path to work with
+    if (!router.asPath) {
+      return undefined;
+    }
+
+    // Check if current path should be handled
+    const currentPath = router.asPath.split('?')[0]; // Remove query params for matching
+
+    // Skip if path is excluded
+    if (excludedPaths.some((path) => currentPath!.startsWith(path))) {
+      return undefined;
+    }
+
+    // Skip if we have allowedPaths and current path isn't in it
+    if (
+      allowedPaths &&
+      !allowedPaths.some((path) => currentPath!.startsWith(path))
+    ) {
+      return undefined;
+    }
+
     if (!isMobile() || hasAttemptedRedirect.current) {
       return undefined;
     }
@@ -34,7 +59,6 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
     const isAndroid = /Android/i.test(navigator.userAgent);
     const appUrl = `${appScheme}://${path}`;
 
-    // Create a hidden iframe for the app attempt
     const iframe = document.createElement('iframe');
     iframe.style.display = 'none';
     iframe.src = appUrl;
@@ -51,7 +75,7 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
         document.body.removeChild(iframe);
       }
     };
-  }, [router.asPath, appScheme, storeUrls]);
+  }, [router.asPath, appScheme, storeUrls, excludedPaths, allowedPaths]);
 
   return null;
 };
