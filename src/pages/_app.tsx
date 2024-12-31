@@ -9,8 +9,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => (
     <DeepLinkHandler
       appScheme="plantative"
       storeUrls={{
-        android: 'https://slverpla.github.io/', // Replace with your Android app URL
-        ios: 'https://slverpla.github.io/', // Replace with your iOS app URL
+        android: 'https://slverpla.github.io/get-plantative/', // Replace with Android app URL
+        ios: 'https://slverpla.github.io/get-plantative/', // Replace with iOS app URL
       }}
       excludedPaths={['/', '/get-plantative']}
     />

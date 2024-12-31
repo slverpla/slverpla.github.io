@@ -1,4 +1,3 @@
-// components/DeepLinkHandler.tsx
 import { useRouter } from 'next/router';
 import { useEffect, useRef } from 'react';
 
@@ -53,6 +52,34 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
     }
 
     hasAttemptedRedirect.current = true;
+
+    // Get the full URL
+    const fullUrl = typeof window !== 'undefined' ? window.location.href : '';
+
+    // Check if the URL matches the pattern we want to rewrite
+    if (fullUrl.includes('slverpla.github.io/plant/')) {
+      const appUrl = fullUrl.replace('https://', 'plantative://');
+
+      const iframe = document.createElement('iframe');
+      iframe.style.display = 'none';
+      iframe.src = appUrl;
+      document.body.appendChild(iframe);
+
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      const timeoutId = setTimeout(() => {
+        document.body.removeChild(iframe);
+        window.location.href = isAndroid ? storeUrls.android : storeUrls.ios;
+      }, 1000);
+
+      return () => {
+        clearTimeout(timeoutId);
+        if (document.body.contains(iframe)) {
+          document.body.removeChild(iframe);
+        }
+      };
+    }
+
+    // Handle other URLs as before
     const path = router.asPath.startsWith('/')
       ? router.asPath.slice(1)
       : router.asPath;
