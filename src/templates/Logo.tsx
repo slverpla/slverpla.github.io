@@ -61,8 +61,8 @@ const Logo = (props: ILogoProps) => {
         <img
           src="/assets/images/logo.png"
           alt={`${AppConfig.site_name} logo`}
-          width="54"
-          height="54"
+          width="88"
+          height="88"
         />
       </span>
     );
