@@ -1,19 +1,13 @@
-import { useRouter } from 'next/router';
-import { useEffect } from 'react';
+import Custom404 from '@/components/DeepLinkHandler';
 
-const isMobile = () => {
-  if (typeof window === 'undefined') return false;
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-};
-
-export default function Custom404() {
-  const router = useRouter();
-
-  useEffect(() => {
-    if (!isMobile()) {
-      router.replace('/');
-    }
-  }, [router]);
-
-  return null;
+export default function NotFound() {
+  return (
+    <Custom404
+      appScheme="plantative"
+      storeUrls={{
+        android: 'https://slverpla.github.io/get-plantative/', // Replace with Android app URL
+        ios: 'https://slverpla.github.io/get-plantative/', // Replace with iOS app URL
+      }}
+    />
+  );
 }

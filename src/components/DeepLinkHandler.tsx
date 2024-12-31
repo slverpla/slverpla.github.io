@@ -1,14 +1,12 @@
 import { useRouter } from 'next/router';
 import { useEffect, useRef, useState } from 'react';
 
-interface DeepLinkHandlerProps {
+interface Custom404Props {
   appScheme: string;
   storeUrls: {
     android: string;
     ios: string;
   };
-  excludedPaths?: string[];
-  allowedPaths?: string[];
 }
 
 const sleep = (ms: number) =>
@@ -38,12 +36,7 @@ const DebugOverlay: React.FC<{
   );
 };
 
-export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
-  appScheme,
-  storeUrls,
-  excludedPaths = [],
-  allowedPaths,
-}) => {
+export default function Custom404({ appScheme, storeUrls }: Custom404Props) {
   const router = useRouter();
   const hasAttemptedRedirect = useRef(false);
   const [debugState, setDebugState] = useState<{
@@ -68,43 +61,17 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
 
   useEffect(() => {
     const handleDeepLink = async () => {
-      // Check if we have a path
-      if (!router.asPath) {
-        await showDebugModal('Path Check', 'No path available, exiting');
-        return;
-      }
-
-      // Check current path
-      const currentPath = router.asPath?.split('?')[0] ?? '';
-      await showDebugModal('Current Path', `Processing path: ${currentPath}`);
-
-      // Check excluded paths
-      if (excludedPaths.some((path) => currentPath.startsWith(path))) {
-        await showDebugModal(
-          'Excluded Path',
-          `Path ${currentPath} is excluded, exiting`,
-        );
-        return;
-      }
-
-      // Check allowed paths
-      if (
-        allowedPaths &&
-        !allowedPaths.some((path) => currentPath.startsWith(path))
-      ) {
-        await showDebugModal(
-          'Allowed Path',
-          `Path ${currentPath} is not in allowed paths, exiting`,
-        );
-        return;
-      }
-
-      // Check mobile and redirect attempt
+      // If not mobile, redirect to home
       if (!isMobile()) {
-        await showDebugModal('Device Check', 'Not a mobile device, exiting');
+        await showDebugModal(
+          'Device Check',
+          'Not a mobile device, redirecting to home',
+        );
+        router.replace('/');
         return;
       }
 
+      // Check if we already attempted a redirect
       if (hasAttemptedRedirect.current) {
         await showDebugModal(
           'Redirect Check',
@@ -151,14 +118,11 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
         }
       };
 
-      // Register cleanup
       window.addEventListener('beforeunload', cleanup);
-
-      // Return void instead of cleanup function
     };
 
     handleDeepLink();
-  }, [router.asPath, appScheme, storeUrls, excludedPaths, allowedPaths]);
+  }, [router, appScheme, storeUrls]);
 
   return (
     <DebugOverlay
@@ -167,4 +131,4 @@ export const DeepLinkHandler: React.FC<DeepLinkHandlerProps> = ({
       visible={debugState.showModal}
     />
   );
-};
+}
