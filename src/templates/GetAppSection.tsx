@@ -8,7 +8,7 @@ const DownloadSection = () => (
     <div className="mx-auto -mt-8 flex max-w-6xl flex-col items-center justify-between px-4 pb-12 md:mt-0 md:flex-row">
       {/* Left Column */}
       <div className="mb-8 flex flex-col items-center space-y-6 md:mb-0 md:items-start">
-        <h2 className="whitespace-pre-line text-center text-5xl font-bold leading-[1.1] text-gray-900 md:text-left md:text-6xl md:leading-hero">
+        <h2 className="whitespace-pre-line text-center text-4xl font-bold leading-[1.1] text-gray-900 md:text-left md:text-6xl md:leading-hero">
           Get Plantative{'\n'}for iOS/Android
         </h2>
         <div className="flex flex-row gap-2 sm:gap-4">
