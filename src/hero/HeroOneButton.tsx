@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '../button/Button';
 
 const HeroOneButton = () => (
-  <header className="px-14 text-center">
+  <header className="px-10 text-center">
     <h1 className="-mt-16 text-4xl font-bold leading-none text-gray-900 md:mt-0 md:text-5xl">
       <div>Trade and share plants with</div>
       <div>Plantative</div>
