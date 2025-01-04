@@ -51,23 +51,39 @@ const Footer = () => (
         }
       >
         <li>
-          <Link href="/" className="text-xs sm:text-sm">
+          <Link href="/" className="text-sm sm:text-base md:text-xl">
             Home
           </Link>
         </li>
         <li>
-          <Link href="/get-plantative" className="text-xs sm:text-sm">
+          <Link
+            href="/get-plantative"
+            className="text-sm sm:text-base md:text-xl"
+          >
             Get the App
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-xs sm:text-sm">
+          <Link href="/" className="text-sm sm:text-base md:text-xl">
             Newsletter
           </Link>
         </li>
         <li>
-          <Link href="/" className="text-xs sm:text-sm">
+          <Link href="/" className="text-sm sm:text-base md:text-xl">
             About
+          </Link>
+        </li>
+        <li>
+          <Link href="/terms" className="text-sm sm:text-base md:text-xl">
+            Terms
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/privacy-policy"
+            className="text-sm sm:text-base md:text-xl"
+          >
+            Privacy Policy
           </Link>
         </li>
       </CenteredFooter>
