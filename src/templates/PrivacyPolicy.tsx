@@ -134,6 +134,10 @@ const PrivacyPolicy = () => {
                 <li>Account information: Until account deletion</li>
                 <li>Plant listings: Until removed or account deletion</li>
                 <li>Technical data: 12 months</li>
+                <li>
+                  Chat data: 12 months after the last person deletes/leaves the
+                  chat.
+                </li>
               </ul>
 
               <h2 className="mb-4 mt-8 text-2xl font-semibold text-gray-900">
