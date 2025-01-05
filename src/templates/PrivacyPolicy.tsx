@@ -137,7 +137,33 @@ const PrivacyPolicy = () => {
               </ul>
 
               <h2 className="mb-4 mt-8 text-2xl font-semibold text-gray-900">
-                5. Your Controls and Rights
+                5. Data Deletion
+              </h2>
+
+              <p className="mb-4 text-gray-600">
+                We believe in giving you full control over your data. You can
+                delete your account and associated information at any time
+                through our user-friendly deletion process:
+              </p>
+
+              <ol className="mb-6 list-decimal space-y-2 pl-6 text-gray-600">
+                <li>
+                  Go to your Profile Settings in the right corner of the
+                  navigation bar.
+                </li>
+                <li>
+                  Edit the profile by clicking the edit button at the top of the
+                  screen.
+                </li>
+                <li>
+                  Scroll to the bottom of the page until you see the
+                  &rsquo;Delete Account&rsquo; button.
+                </li>
+                <li>Confirm your choice by clicking confirm.</li>
+              </ol>
+
+              <h2 className="mb-4 mt-8 text-2xl font-semibold text-gray-900">
+                6. Your Controls and Rights
               </h2>
               <p className="mb-4 text-gray-600">You can:</p>
               <ul className="mb-6 list-disc pl-6 text-gray-600">
@@ -151,7 +177,7 @@ const PrivacyPolicy = () => {
               </ul>
 
               <h2 className="mb-4 mt-8 text-2xl font-semibold text-gray-900">
-                6. Children&rsquo;s Privacy
+                7. Children&rsquo;s Privacy
               </h2>
               <p className="mb-6 text-gray-600">
                 Plantative is intended for users 18 and older. We do not
@@ -159,7 +185,7 @@ const PrivacyPolicy = () => {
               </p>
 
               <h2 className="mb-4 mt-8 text-2xl font-semibold text-gray-900">
-                7. Contact Us
+                8. Contact Us
               </h2>
 
               <p className="mb-6 text-gray-600">plantative@gmail.com</p>
