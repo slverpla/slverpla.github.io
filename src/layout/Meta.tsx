@@ -19,6 +19,11 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <meta
+          name="google-site-verification"
+          content="H99J8vU1McXIRfD010wFzNIRCa28-E8ptiAHpEjxm9o"
+          key="google-verification"
+        />
         <link
           rel="apple-touch-icon"
           href={`/assets/images/logo.png`}
