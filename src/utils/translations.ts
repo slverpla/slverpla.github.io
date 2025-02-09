@@ -59,7 +59,7 @@ export const translations = {
       trading: {
         title: 'Koop en verkoop planten',
         description:
-          'Maak verbinding met plantenliefhebbers wereldwijd om je favoriete planten te kopen, verkopen of ruilen. Of je nu op zoek bent naar iets speciaals of een nieuw thuis zoekt voor je extra planten, onze community is de perfecte plek om je collectie uit te breiden.',
+          'Connect met plantenliefhebbers wereldwijd om je favoriete planten te kopen, verkopen of ruilen. Of je nu op zoek bent naar iets speciaals of een nieuwe thuis zoekt voor je extra planten, onze community is de perfecte plek om je collectie uit te breiden.',
       },
       recognition: {
         title: 'Plantenherkenning',
