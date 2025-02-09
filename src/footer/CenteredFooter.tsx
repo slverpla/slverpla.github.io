@@ -1,5 +1,7 @@
 import type { ReactNode } from 'react';
 
+import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+
 import { FooterCopyright } from './FooterCopyright';
 import { FooterIconList } from './FooterIconList';
 
@@ -23,7 +25,11 @@ const CenteredFooter = (props: ICenteredFooterProps) => (
       <FooterIconList>{props.iconList}</FooterIconList>
     </div>
 
-    <div className="mt-8 text-sm">
+    <div className="mt-4 flex items-center justify-center">
+      <LanguageSwitcher />
+    </div>
+
+    <div className="mt-4 text-sm">
       <FooterCopyright />
     </div>
 
