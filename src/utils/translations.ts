@@ -69,7 +69,7 @@ export const translations = {
       expert: {
         title: 'Expert Plantenverzorging',
         description:
-          'Krijg persoonlijk advies van botanici en plantenspecialisten. Of je nu te maken hebt met plaagproblemen, groeiproblemen of verzorgingstips zoekt, onze plantendokters zijn er om je groene vrienden te laten floreren.',
+          'Krijg persoonlijk advies met de kennis van botanici en plantenspecialisten. Of je nu te maken hebt met een ziekte, groeiproblemen of verzorgingstips zoekt, onze plantendokter is er om je groene vrienden te laten floreren.',
       },
     },
     download: {
