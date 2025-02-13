@@ -5,8 +5,8 @@ export default function NotFound() {
     <Custom404
       appScheme="plantative"
       storeUrls={{
-        android: 'https://slverpla.github.io/get-plantative/', // Replace with Android app URL
-        ios: 'https://slverpla.github.io/get-plantative/', // Replace with iOS app URL
+        android: 'https://plantative.com/get-plantative/', // Replace with Android app URL
+        ios: 'https://plantative.com/get-plantative/', // Replace with iOS app URL
       }}
     />
   );
