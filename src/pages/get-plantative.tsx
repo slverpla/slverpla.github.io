@@ -7,6 +7,7 @@ import { AppConfig } from '../utils/AppConfig';
 const GetTheApp = () => (
   <div className="text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
+
     <GetAppHeader />
     <DownloadSection />
     <Footer />

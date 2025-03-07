@@ -6,6 +6,7 @@ import { NavbarTwoColumns } from '../navigation/NavbarTwoColumns';
 import type { Language } from '../utils/translations';
 import { translations } from '../utils/translations';
 import { Logo } from './Logo';
+import { ScrollFadeInSection } from './ScrollFadeIn';
 
 interface HomeHeaderProps {
   language?: Language;
@@ -37,9 +38,11 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
           </div>
         </NavbarTwoColumns>
       </Section>
-      <Section yPadding="pt-20 pb-8">
-        <HeroOneButton language={language} />
-      </Section>
+      <ScrollFadeInSection>
+        <Section yPadding="pt-20 pb-8">
+          <HeroOneButton language={language} />
+        </Section>
+      </ScrollFadeInSection>
     </>
   );
 };
