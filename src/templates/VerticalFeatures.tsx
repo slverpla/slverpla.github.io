@@ -13,14 +13,16 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
   const t = translations[language];
 
   return (
-    <ScrollFadeInSection>
-      <Section>
+    <Section>
+      <ScrollFadeInSection>
         <VerticalFeatureRow
           title={t.features.trading.title}
           description={t.features.trading.description}
           image="/assets/images/buying_and_selling_blur_bg.png"
           imageAlt="Illustration of people trading plants"
         />
+      </ScrollFadeInSection>
+      <ScrollFadeInSection>
         <VerticalFeatureRow
           title={t.features.recognition.title}
           description={t.features.recognition.description}
@@ -28,14 +30,16 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           imageAlt="Plant identification through camera illustration"
           reverse
         />
+      </ScrollFadeInSection>
+      <ScrollFadeInSection>
         <VerticalFeatureRow
           title={t.features.expert.title}
           description={t.features.expert.description}
           image="/assets/images/doctor_edited.png"
           imageAlt="Plant care expert consultation illustration"
         />
-      </Section>
-    </ScrollFadeInSection>
+      </ScrollFadeInSection>
+    </Section>
   );
 };
 
