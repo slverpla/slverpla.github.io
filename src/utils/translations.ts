@@ -7,8 +7,7 @@ export const translations = {
     hero: {
       title1: 'Trade and share plants with',
       title2: 'Plantative',
-      subtitle:
-        'Connect with local plant enthusiasts, trade cuttings, and grow your plants with ease.',
+      subtitle: 'Trade plants, grow friendships. Where plant lovers unite.',
       cta: 'Download The App Now',
     },
     features: {
@@ -52,7 +51,7 @@ export const translations = {
       title1: 'Ruil en deel planten met',
       title2: 'Plantative',
       subtitle:
-        'Verbind met lokale plantenliefhebbers, ruil stekjes en laat je planten groeien met gemak.',
+        'De plaats waar plantenliefhebbers samenkomen. Ruil je planten en laat vriendschappen bloeien.',
       cta: 'Download De App Nu',
     },
     features: {
