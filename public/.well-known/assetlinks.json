@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.plantative.app",
+      "sha256_cert_fingerprints": [
+        "48:F8:83:01:DF:9A:B1:E9:06:4B:97:EC:60:AF:8A:31:83:99:59:39:0E:61:02:9E:60:16:11:D2:31:98:E9:28"
+      ]
+    }
+  }
+]
