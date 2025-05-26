@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { AppConfig } from '@/utils/AppConfig';
+
 import { Section } from '../layout/Section';
 import { type Language, translations } from '../utils/translations';
 import { ScrollFadeInSection } from './ScrollFadeIn';
@@ -25,7 +27,7 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
             </h2>
             <div className="flex flex-row gap-2 sm:gap-4">
               <Link
-                href="https://apps.apple.com"
+                href={AppConfig.storeUrls.ios}
                 className="w-36 sm:w-40 md:w-44 lg:w-48"
               >
                 <Image
@@ -37,7 +39,7 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
                 />
               </Link>
               <Link
-                href="https://play.google.com"
+                href={AppConfig.storeUrls.android}
                 className="w-36 sm:w-40 md:w-44 lg:w-48"
               >
                 <Image
