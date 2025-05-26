@@ -56,7 +56,7 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
           {/* Right Column - QR Code */}
           <div className="hidden md:block">
             <Image
-              src="/assets/images/qr-code.png"
+              src={t.download.qrCodeUrl}
               alt={t.download.qrCodeAlt}
               width={1000}
               height={1000}
