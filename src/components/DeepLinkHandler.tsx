@@ -20,47 +20,72 @@ export default function Custom404({ appScheme, storeUrls }: Custom404Props) {
 
   useEffect(() => {
     const handleDeepLink = () => {
-      // If not mobile, redirect to home
       if (!isMobile()) {
         router.replace('/');
         return;
       }
 
-      // Check if we already attempted a redirect
       if (hasAttemptedRedirect.current) {
         return;
       }
 
       hasAttemptedRedirect.current = true;
 
-      // Get full URL and create app URL
       const fullUrl = typeof window !== 'undefined' ? window.location.href : '';
       const appUrl = fullUrl.replace('https://', `${appScheme}://`);
 
-      // Create and append iframe
       const iframe = document.createElement('iframe');
       iframe.style.display = 'none';
       iframe.src = appUrl;
       document.body.appendChild(iframe);
 
-      // Handle store redirect
       const isAndroid = /Android/i.test(navigator.userAgent);
       const storeUrl = isAndroid ? storeUrls.android : storeUrls.ios;
 
+      let redirected = false;
+
       const timeoutId = setTimeout(() => {
-        document.body.removeChild(iframe);
-        window.location.href = storeUrl;
+        if (!redirected) {
+          document.body.removeChild(iframe);
+          window.location.href = storeUrl;
+        }
       }, 1000);
 
-      // Handle cleanup
-      const cleanup = () => {
+      // Listen for when the app opens (user leaves the page)
+      const handleVisibilityChange = () => {
+        if (document.hidden) {
+          redirected = true;
+          clearTimeout(timeoutId);
+        }
+      };
+
+      const handleBlur = () => {
+        redirected = true;
         clearTimeout(timeoutId);
+      };
+
+      // Add event listeners
+      document.addEventListener('visibilitychange', handleVisibilityChange);
+      window.addEventListener('blur', handleBlur);
+
+      // Cleanup function
+      const cleanup = () => {
+        redirected = true;
+        clearTimeout(timeoutId);
+        document.removeEventListener(
+          'visibilitychange',
+          handleVisibilityChange,
+        );
+        window.removeEventListener('blur', handleBlur);
         if (document.body.contains(iframe)) {
           document.body.removeChild(iframe);
         }
       };
 
       window.addEventListener('beforeunload', cleanup);
+
+      // Clean up after timeout regardless
+      setTimeout(cleanup, 2000);
     };
 
     handleDeepLink();
