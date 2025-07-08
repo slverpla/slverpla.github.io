@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { Section } from '@/layout/Section';
 import type { Language } from '@/utils/translations';
@@ -11,6 +13,7 @@ interface VerticalFeaturesProps {
 
 const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
   const t = translations[language];
+  const router = useRouter();
 
   return (
     <Section>
@@ -37,6 +40,11 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           description={t.features.expert.description}
           image="/assets/images/doctor_edited.png"
           imageAlt="Plant care expert consultation illustration"
+          isClickable
+          bubbleText={t.features.expert.hereToHelp}
+          onClick={() => {
+            router.push(`${language === 'en' ? '' : '/nl'}/plantative-doctor`);
+          }}
         />
       </ScrollFadeInSection>
     </Section>

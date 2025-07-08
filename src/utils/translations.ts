@@ -24,7 +24,8 @@ export const translations = {
       expert: {
         title: 'Expert Plant Care',
         description:
-          "Get personalized advice from botanists and plant specialists. Whether you're dealing with pest problems, growth issues, or seeking care tips, our plant doctors are here to help your green friends thrive.",
+          "Get instant, personalized advice for your plants anytime. Whether you're dealing with diseases, watering questions, or need help identifying your plants, Plantative Doctor gives you expert guidance tailored to your specific situation.",
+        hereToHelp: 'Click here for help!',
       },
     },
     download: {
@@ -69,7 +70,8 @@ export const translations = {
       expert: {
         title: 'Expert Plantenverzorging',
         description:
-          'Krijg persoonlijk advies met de kennis van botanici en plantenspecialisten. Of je nu te maken hebt met een ziekte, groeiproblemen of verzorgingstips zoekt, onze plantendokter is er om je groene vrienden te laten floreren.',
+          'Krijg gepersonaliseerd advies voor je planten, wanneer je maar wilt. Of je nu problemen hebt met ziektes, vragen over water geven, of hulp nodig hebt bij het identificeren van je planten, Plantative Doctor geeft je deskundig advies op maat voor jouw specifieke situatie.',
+        hereToHelp: 'Klik hier voor hulp!',
       },
     },
     download: {

@@ -7,6 +7,9 @@ type IVerticalFeatureRowProps = {
   image: string;
   imageAlt: string;
   reverse?: boolean;
+  isClickable?: boolean;
+  onClick?: () => void;
+  bubbleText?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -22,28 +25,80 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
 
   const router = useRouter();
 
+  const handleInteraction = () => {
+    if (props.isClickable && props.onClick) {
+      props.onClick();
+    }
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      handleInteraction();
+    }
+  };
+
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
-        <div className="mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9">
+        <h3
+          className={`text-3xl font-semibold text-gray-900 ${
+            props.isClickable ? 'cursor-pointer hover:underline' : ''
+          }`}
+          onClick={handleInteraction}
+          onKeyDown={handleKeyDown}
+          role={props.isClickable ? 'button' : undefined}
+          tabIndex={props.isClickable ? 0 : -1}
+        >
+          {props.title}
+        </h3>
+        <div
+          className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9 ${
+            props.isClickable ? 'cursor-pointer hover:underline' : ''
+          }`}
+          onClick={handleInteraction}
+          onKeyDown={handleKeyDown}
+          role={props.isClickable ? 'button' : undefined}
+          tabIndex={props.isClickable ? 0 : -1}
+        >
           {props.description}
         </div>
       </div>
 
       <div className="w-full p-6 sm:w-1/2">
-        <div className="mx-auto max-w-sm">
-          <img
-            src={`${router.basePath}${props.image}`}
-            alt={props.imageAlt}
-            className="h-auto w-full"
-            style={{
-              maskImage:
-                'radial-gradient(circle at center, black 60%, transparent 65%)',
-              WebkitMaskImage:
-                'radial-gradient(circle at center, black 60%, transparent 65%)',
-            }}
-          />
+        <div
+          className="group relative"
+          onClick={handleInteraction}
+          onKeyDown={handleKeyDown}
+          role={props.isClickable ? 'button' : undefined}
+          tabIndex={props.isClickable ? 0 : -1}
+        >
+          {props.bubbleText && (
+            <div
+              className={`absolute left-[-5%] w-[clamp(100px,25%,192px)] rounded-lg bg-[#288658] p-2 text-center text-white transition-colors duration-300 group-hover:bg-[#24784f] ${
+                props.isClickable ? 'cursor-pointer' : ''
+              }`}
+            >
+              {props.bubbleText}
+              <div className="absolute bottom-0 right-0 size-4 translate-x-[45%] translate-y-[45%] bg-[#288658] transition-colors duration-300 [clip-path:polygon(_100%_100%,_0_100%,_100%_0)] group-hover:bg-[#24784f]"></div>
+            </div>
+          )}
+          <div
+            className={`mx-auto max-w-sm ${
+              props.isClickable ? 'cursor-pointer' : ''
+            }`}
+          >
+            <img
+              src={`${router.basePath}${props.image}`}
+              alt={props.imageAlt}
+              className="h-auto w-full"
+              style={{
+                maskImage:
+                  'radial-gradient(circle at center, black 60%, transparent 65%)',
+                WebkitMaskImage:
+                  'radial-gradient(circle at center, black 60%, transparent 65%)',
+              }}
+            />
+          </div>
         </div>
       </div>
     </div>
