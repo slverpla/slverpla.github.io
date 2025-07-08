@@ -25,7 +25,6 @@ export const translations = {
         title: 'Expert Plant Care',
         description:
           "Get instant, personalized advice for your plants anytime. Whether you're dealing with diseases, watering questions, or need help identifying your plants, Plantative Doctor gives you expert guidance tailored to your specific situation.",
-        hereToHelp: 'Click here for help!',
       },
     },
     download: {
@@ -71,7 +70,6 @@ export const translations = {
         title: 'Expert Plantenverzorging',
         description:
           'Krijg gepersonaliseerd advies voor je planten, wanneer je maar wilt. Of je nu problemen hebt met ziektes, vragen over water geven, of hulp nodig hebt bij het identificeren van je planten, Plantative Doctor geeft je deskundig advies op maat voor jouw specifieke situatie.',
-        hereToHelp: 'Klik hier voor hulp!',
       },
     },
     download: {

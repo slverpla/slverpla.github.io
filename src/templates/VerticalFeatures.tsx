@@ -41,7 +41,6 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           image="/assets/images/doctor_edited.png"
           imageAlt="Plant care expert consultation illustration"
           isClickable
-          bubbleText={t.features.expert.hereToHelp}
           onClick={() => {
             router.push(`${language === 'en' ? '' : '/nl'}/plantative-doctor`);
           }}

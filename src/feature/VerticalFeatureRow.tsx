@@ -9,7 +9,6 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
   isClickable?: boolean;
   onClick?: () => void;
-  bubbleText?: string;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -72,16 +71,6 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           role={props.isClickable ? 'button' : undefined}
           tabIndex={props.isClickable ? 0 : -1}
         >
-          {props.bubbleText && (
-            <div
-              className={`absolute left-[-5%] w-[clamp(100px,25%,192px)] rounded-lg bg-[#288658] p-2 text-center text-white transition-colors duration-300 group-hover:bg-[#24784f] ${
-                props.isClickable ? 'cursor-pointer' : ''
-              }`}
-            >
-              {props.bubbleText}
-              <div className="absolute bottom-0 right-0 size-4 translate-x-[45%] translate-y-[45%] bg-[#288658] transition-colors duration-300 [clip-path:polygon(_100%_100%,_0_100%,_100%_0)] group-hover:bg-[#24784f]"></div>
-            </div>
-          )}
           <div
             className={`mx-auto max-w-sm ${
               props.isClickable ? 'cursor-pointer' : ''
