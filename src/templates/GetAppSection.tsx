@@ -31,7 +31,7 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
                 className="w-36 sm:w-40 md:w-44 lg:w-48"
               >
                 <Image
-                  src="/assets/images/appstore.png"
+                  src="/assets/images/appstore.webp"
                   alt={t.download.appStoreAlt}
                   width={192}
                   height={56}
@@ -43,7 +43,7 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
                 className="w-36 sm:w-40 md:w-44 lg:w-48"
               >
                 <Image
-                  src="/assets/images/googleplay.png"
+                  src="/assets/images/googleplay.webp"
                   alt={t.download.playStoreAlt}
                   width={192}
                   height={56}

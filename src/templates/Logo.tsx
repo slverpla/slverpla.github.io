@@ -13,7 +13,7 @@ const LogoWithText = (props: ILogoProps) => {
         style={{ color: '#1c5f3e' }}
       >
         <img
-          src="/assets/images/logo.png"
+          src="/assets/images/logo.webp"
           alt={`${AppConfig.site_name} logo`}
           width="54"
           height="54"
@@ -31,7 +31,7 @@ const LogoWithText = (props: ILogoProps) => {
       style={{ color: '#1c5f3e' }}
     >
       <img
-        src="/assets/images/logo.png"
+        src="/assets/images/logo.webp"
         alt={`${AppConfig.site_name} logo`}
         width="34"
         height="34"
@@ -47,7 +47,7 @@ const Logo = (props: ILogoProps) => {
     return (
       <span className="inline-flex items-center">
         <img
-          src="/assets/images/logo.png"
+          src="/assets/images/logo.webp"
           alt={`${AppConfig.site_name} logo`}
           width="120"
           height="120"
@@ -59,7 +59,7 @@ const Logo = (props: ILogoProps) => {
     return (
       <span className="inline-flex items-center">
         <img
-          src="/assets/images/logo.png"
+          src="/assets/images/logo.webp"
           alt={`${AppConfig.site_name} logo`}
           width="88"
           height="88"
@@ -70,7 +70,7 @@ const Logo = (props: ILogoProps) => {
   return (
     <span className="inline-flex items-center">
       <img
-        src="/assets/images/logo.png"
+        src="/assets/images/logo.webp"
         alt={`${AppConfig.site_name} logo`}
         width="34"
         height="34"

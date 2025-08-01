@@ -26,21 +26,21 @@ const Meta = (props: IMetaProps) => {
         />
         <link
           rel="apple-touch-icon"
-          href={`/assets/images/logo.png`}
+          href={`/assets/images/logo.webp`}
           key="apple"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`/assets/images/logo.png`}
+          href={`/assets/images/logo.webp`}
           key="icon32"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`/assets/images/logo.png`}
+          href={`/assets/images/logo.webp`}
           key="icon16"
         />
         <link rel="icon" href={`/assets/favicon.ico`} key="favicon" />
