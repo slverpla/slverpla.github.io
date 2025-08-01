@@ -3,6 +3,7 @@ import { AppConfig } from '../utils/AppConfig';
 type ILogoProps = {
   xl?: boolean;
   xxl?: boolean;
+  responsive?: boolean;
 };
 
 const LogoWithText = (props: ILogoProps) => {
@@ -43,6 +44,17 @@ const LogoWithText = (props: ILogoProps) => {
 };
 
 const Logo = (props: ILogoProps) => {
+  if (props.responsive) {
+    return (
+      <span className="inline-flex items-center">
+        <img
+          src="/assets/images/logo.webp"
+          alt={`${AppConfig.site_name} logo`}
+          className="w-[88px] md:w-32"
+        />
+      </span>
+    );
+  }
   if (props.xxl) {
     return (
       <span className="inline-flex items-center">

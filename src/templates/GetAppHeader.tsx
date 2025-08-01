@@ -15,7 +15,7 @@ const GetAppHeader = ({ language = 'en' }: GetAppHeaderProps) => {
 
   return (
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />}>
+      <NavbarTwoColumns logo={<Logo responsive />}>
         <div className="pr-0 md:pr-8">
           <ul className="flex items-center space-x-8">
             <li>

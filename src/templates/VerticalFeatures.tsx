@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
+import { BackgroundSection } from '@/layout/BackgroundSection';
 import { Section } from '@/layout/Section';
 import type { Language } from '@/utils/translations';
 import { translations } from '@/utils/translations';
@@ -16,37 +17,42 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
   const router = useRouter();
 
   return (
-    <Section>
-      <ScrollFadeInSection>
-        <VerticalFeatureRow
-          title={t.features.trading.title}
-          description={t.features.trading.description}
-          image="/assets/images/buying_and_selling_blur_bg.webp"
-          imageAlt="Illustration of people trading plants"
-        />
-      </ScrollFadeInSection>
-      <ScrollFadeInSection>
-        <VerticalFeatureRow
-          title={t.features.recognition.title}
-          description={t.features.recognition.description}
-          image="/assets/images/search_plants.webp"
-          imageAlt="Plant identification through camera illustration"
-          reverse
-        />
-      </ScrollFadeInSection>
-      <ScrollFadeInSection>
-        <VerticalFeatureRow
-          title={t.features.expert.title}
-          description={t.features.expert.description}
-          image="/assets/images/doctor_edited.webp"
-          imageAlt="Plant care expert consultation illustration"
-          isClickable
-          onClick={() => {
-            router.push(`${language === 'en' ? '' : '/nl'}/plantative-doctor`);
-          }}
-        />
-      </ScrollFadeInSection>
-    </Section>
+    <BackgroundSection yPadding="pb-16">
+      <Section yPadding="py-8">
+        <ScrollFadeInSection>
+          <VerticalFeatureRow
+            title={t.features.trading.title}
+            description={t.features.trading.description}
+            image="/assets/images/buying_and_selling_blur_bg.webp"
+            imageAlt="Illustration of people trading plants"
+            removeMarginTop
+          />
+        </ScrollFadeInSection>
+        <ScrollFadeInSection>
+          <VerticalFeatureRow
+            title={t.features.recognition.title}
+            description={t.features.recognition.description}
+            image="/assets/images/search_plants.webp"
+            imageAlt="Plant identification through camera illustration"
+            reverse
+          />
+        </ScrollFadeInSection>
+        <ScrollFadeInSection>
+          <VerticalFeatureRow
+            title={t.features.expert.title}
+            description={t.features.expert.description}
+            image="/assets/images/doctor_edited.webp"
+            imageAlt="Plant care expert consultation illustration"
+            isClickable
+            onClick={() => {
+              router.push(
+                `${language === 'en' ? '' : '/nl'}/plantative-doctor`,
+              );
+            }}
+          />
+        </ScrollFadeInSection>
+      </Section>
+    </BackgroundSection>
   );
 };
 

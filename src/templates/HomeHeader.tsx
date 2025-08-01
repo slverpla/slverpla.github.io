@@ -16,11 +16,11 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
   const t = translations[language];
 
   return (
-    <>
+    <div className="splash-screen-background">
       <Section yPadding="py-6">
-        <NavbarTwoColumns logo={<Logo xl />}>
+        <NavbarTwoColumns logo={<Logo responsive />}>
           <div className="pr-1 md:pr-8">
-            <ul className="flex items-center space-x-8">
+            <ul className="flex items-center space-x-8 text-black">
               <li className="hidden md:block">
                 <Link
                   href={language === 'en' ? '/' : '/nl'}
@@ -39,11 +39,11 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
         </NavbarTwoColumns>
       </Section>
       <ScrollFadeInSection>
-        <Section yPadding="pt-20 pb-8">
+        <Section yPadding="pt-24 pb-12">
           <HeroOneButton language={language} />
         </Section>
       </ScrollFadeInSection>
-    </>
+    </div>
   );
 };
 

@@ -9,11 +9,12 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
   isClickable?: boolean;
   onClick?: () => void;
+  removeMarginTop?: boolean;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const verticalFeatureClass = className(
-    'mt-20',
+    { 'mt-20': !props.removeMarginTop },
     'flex',
     'flex-wrap',
     'items-center',
