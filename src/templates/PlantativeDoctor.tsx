@@ -10,7 +10,7 @@ const PlantativeDoctor = () => (
       <div className="w-full p-4 sm:w-1/2">
         <div className="mx-auto max-w-sm">
           <img
-            src="/assets/images/doctor_edited.webp"
+            src="/assets/images/doctor_edited.png"
             alt="Plant care expert consultation illustration"
             className="h-auto w-full"
             style={{

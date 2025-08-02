@@ -16,7 +16,7 @@ const Sponsors = () => (
               target="_blank"
             >
               <Image
-                src="/assets/images/sentry-dark.webp"
+                src="/assets/images/sentry-dark.png"
                 alt="Sentry"
                 width={260}
                 height={224}
@@ -29,7 +29,7 @@ const Sponsors = () => (
               target="_blank"
             >
               <Image
-                src="/assets/images/better-stack-dark.webp"
+                src="/assets/images/better-stack-dark.png"
                 alt="Better Stack"
                 width={260}
                 height={224}
@@ -39,7 +39,7 @@ const Sponsors = () => (
           <td className="border-2 border-gray-300 p-3">
             <a href="https://nextlessjs.com">
               <Image
-                src="/assets/images/nextlessjs.webp"
+                src="/assets/images/nextlessjs.png"
                 alt="React SaaS Boilerplate Next.js"
                 width={260}
                 height={224}
@@ -54,7 +54,7 @@ const Sponsors = () => (
               target="_blank"
             >
               <Image
-                src="/assets/images/clerk.webp"
+                src="/assets/images/clerk.png"
                 alt="Clerk – Authentication & User Management for Next.js"
                 width={260}
                 height={224}
@@ -67,7 +67,7 @@ const Sponsors = () => (
               target="_blank"
             >
               <Image
-                src="/assets/images/turso.webp"
+                src="/assets/images/turso.png"
                 alt="SQLite Developer Experience"
                 width={260}
                 height={224}

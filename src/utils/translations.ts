@@ -36,7 +36,7 @@ export const translations = {
       appStoreAlt: 'Download on App Store',
       playStoreAlt: 'Get it on Google Play',
       qrCodeAlt: 'QR Code to download',
-      qrCodeUrl: '/assets/images/qr-code_en.webp',
+      qrCodeUrl: '/assets/images/qr-code_en.png',
     },
     footer: {
       home: 'Home',
@@ -85,7 +85,7 @@ export const translations = {
       appStoreAlt: 'Download in App Store',
       playStoreAlt: 'Download in Google Play',
       qrCodeAlt: 'QR-code om te downloaden',
-      qrCodeUrl: '/assets/images/qr-code_nl.webp',
+      qrCodeUrl: '/assets/images/qr-code_nl.png',
     },
     footer: {
       home: 'Home',

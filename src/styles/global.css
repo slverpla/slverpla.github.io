@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .splash-screen-background {
-  background-image: url('/assets/images/splash_screen.webp');
+  background-image: url('/assets/images/splash_screen.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
