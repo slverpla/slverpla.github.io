@@ -23,7 +23,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           <VerticalFeatureRow
             title={t.features.trading.title}
             description={t.features.trading.description}
-            image="/assets/images/buying_and_selling_blur_bg.png"
+            image="/assets/images/buying_and_selling_blur_bg.webp"
             imageAlt="Illustration of people trading plants"
             removeMarginTop
             onTryNowClick={() => {
@@ -36,7 +36,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           <VerticalFeatureRow
             title={t.features.recognition.title}
             description={t.features.recognition.description}
-            image="/assets/images/search_plants.png"
+            image="/assets/images/search_plants.webp"
             imageAlt="Plant identification through camera illustration"
             reverse
             onTryNowClick={() => {
@@ -49,7 +49,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           <VerticalFeatureRow
             title={t.features.expert.title}
             description={t.features.expert.description}
-            image="/assets/images/doctor_edited.png"
+            image="/assets/images/doctor_edited.webp"
             imageAlt="Plant care expert consultation illustration"
             isClickable
             onClick={() => {
