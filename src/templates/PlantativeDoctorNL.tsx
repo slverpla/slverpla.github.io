@@ -29,7 +29,7 @@ const PlantativeDoctorNL = () => (
       <div className="prose prose-lg max-w-none">
         <p className="mb-8 text-xl leading-8 text-gray-700">
           Elke plant is uniek, en dat geldt ook voor elk huis, en elke tuin. Dat
-          is de gedachte achter Plantative Doctor – een slimme
+          is de gedachte achter Plantative Doctor, een slimme
           plantenverzorgingsassistent die begrijpt dat er geen one-size-fits-all
           aanpak is om je groene vrienden gelukkig te houden.
         </p>
@@ -51,12 +51,12 @@ const PlantativeDoctorNL = () => (
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
           Plantative Doctor heeft geleerd van miljoenen
-          plantenverzorging-bronnen – boeken, websites, onderzoekspapers, noem
-          maar op. In onze tests geeft het in 96,73% van de gevallen het juiste
-          antwoord op plantenverzorging-vragen. Maar hier is het punt: we weten
-          dat AI niet perfect is, en wij ook niet. Daarom geeft Plantative
-          Doctor je niet zomaar antwoorden – het helpt je om ze te controleren
-          en aanvullende bronnen te vinden zodat je je zeker kunt voelen over je
+          plantenverzorging-bronnen zoals boeken, websites, onderzoekspapers,
+          noem maar op. In onze tests geeft het in 96,73% van de gevallen het
+          juiste antwoord op plantenverzorging-vragen. Maar hier is het punt: we
+          weten dat AI niet perfect is, en wij ook niet. Daarom geeft Plantative
+          Doctor je niet zomaar antwoorden, het helpt je om ze te controleren en
+          aanvullende bronnen te vinden zodat je je zeker kunt voelen over je
           plantenverzorging-beslissingen.
         </p>
 

@@ -29,7 +29,7 @@ const PlantativeDoctor = () => (
       <div className="prose prose-lg max-w-none">
         <p className="mb-8 text-xl leading-8 text-gray-700">
           Every plant is unique, and so is every home, garden, and growing
-          situation. That&apos;s the thinking behind Plantative Doctor – a smart
+          situation. That&apos;s the thinking behind Plantative Doctor, a smart
           plant care assistant that understands there&apos;s no
           one-size-fits-all approach to keeping your green friends happy.
         </p>
@@ -50,13 +50,13 @@ const PlantativeDoctor = () => (
           Smart, but not perfect
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Plantative Doctor has learned from millions of plant care resources –
-          books, websites, research papers, you name it. In our testing, it gets
-          plant care questions right 96.73% of the time. But here&apos;s the
-          thing: we know AI isn&apos;t perfect, and neither are we. That&apos;s
-          why Plantative Doctor doesn&apos;t just give you answers – it helps
-          you double-check them and find additional resources so you can feel
-          confident about your plant care decisions.
+          Plantative Doctor has learned from millions of plant care resources
+          like books, websites, research papers, you name it... In our testing,
+          it gets plant care questions right 96.73% of the time. But here&apos;s
+          the thing: we know AI isn&apos;t perfect, and neither are we.
+          That&apos;s why Plantative Doctor doesn&apos;t just give you answers,
+          it helps you double-check them and find additional resources so you
+          can feel confident about your plant care decisions.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
