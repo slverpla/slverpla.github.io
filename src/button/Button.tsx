@@ -17,7 +17,8 @@ const Button = (props: IButtonProps) => {
     'border-2',
     {
       'text-xl font-extrabold py-4 px-6': props.xl,
-      'text-lg font-semibold py-2 px-4': !props.xl,
+      'text-base font-semibold py-1.5 px-3 md:text-lg md:py-2 md:px-4':
+        !props.xl,
     },
     props.outline
       ? 'border-[#1c5f3e] bg-transparent text-[#1c5f3e] hover:bg-[#1c5f3e] hover:text-white'
