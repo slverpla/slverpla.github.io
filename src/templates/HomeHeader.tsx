@@ -16,7 +16,8 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
   const t = translations[language];
 
   return (
-    <div className="splash-screen-background">
+    <div>
+      <div className="splash-screen-background fixed inset-0 -z-10" />
       <Section yPadding="py-6">
         <NavbarTwoColumns logo={<Logo responsive />}>
           <div className="pr-1 md:pr-8">
