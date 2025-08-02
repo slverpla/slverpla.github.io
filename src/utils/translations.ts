@@ -5,10 +5,10 @@ export const translations = {
       getApp: 'Get the App',
     },
     hero: {
-      title1: 'Trade and share plants with',
+      title1: 'Trade, share and care for plants with',
       title2: 'Plantative',
       subtitle: 'Trade plants, grow friendships. Where plant lovers unite.',
-      cta: 'Download The App Now',
+      cta: 'Download Now For Free',
     },
     features: {
       trading: {
@@ -25,6 +25,10 @@ export const translations = {
         title: 'Expert Plant Care',
         description:
           "Get instant, personalized advice for your plants anytime. Whether you're dealing with diseases, watering questions, or need help identifying your plants, Plantative Doctor gives you expert guidance tailored to your specific situation.",
+      },
+      buttons: {
+        moreInfo: 'More Information',
+        tryNow: 'Try Now',
       },
     },
     download: {
@@ -49,11 +53,11 @@ export const translations = {
       getApp: 'Download de App',
     },
     hero: {
-      title1: 'Ruil en deel planten met',
+      title1: 'Ruil, deel en zorg voor planten met',
       title2: 'Plantative',
       subtitle:
         'De plaats waar plantenliefhebbers samenkomen. Ruil je planten en laat vriendschappen bloeien.',
-      cta: 'Download De App Nu',
+      cta: 'Download Nu Gratis',
     },
     features: {
       trading: {
@@ -70,6 +74,10 @@ export const translations = {
         title: 'Expert Plantenverzorging',
         description:
           'Krijg gepersonaliseerd advies voor je planten, wanneer je maar wilt. Of je nu problemen hebt met ziektes, vragen over water geven, of hulp nodig hebt bij het identificeren van je planten, Plantative Doctor geeft je deskundig advies op maat voor jouw specifieke situatie.',
+      },
+      buttons: {
+        moreInfo: 'Meer informatie',
+        tryNow: 'Probeer nu',
       },
     },
     download: {

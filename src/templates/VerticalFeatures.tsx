@@ -26,6 +26,10 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/buying_and_selling_blur_bg.webp"
             imageAlt="Illustration of people trading plants"
             removeMarginTop
+            onTryNowClick={() => {
+              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
+            }}
+            language={language}
           />
         </ScrollFadeInSection>
         <ScrollFadeInSection>
@@ -35,6 +39,10 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/search_plants.webp"
             imageAlt="Plant identification through camera illustration"
             reverse
+            onTryNowClick={() => {
+              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
+            }}
+            language={language}
           />
         </ScrollFadeInSection>
         <ScrollFadeInSection>
@@ -49,6 +57,15 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
                 `${language === 'en' ? '' : '/nl'}/plantative-doctor`,
               );
             }}
+            onMoreInfoClick={() => {
+              router.push(
+                `${language === 'en' ? '' : '/nl'}/plantative-doctor`,
+              );
+            }}
+            onTryNowClick={() => {
+              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
+            }}
+            language={language}
           />
         </ScrollFadeInSection>
       </Section>

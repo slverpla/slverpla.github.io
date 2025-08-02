@@ -1,24 +1,34 @@
 import classNames from 'classnames';
+import type { ReactNode } from 'react';
 import React from 'react';
 
 type IButtonProps = {
   xl?: boolean;
-  children: string;
+  children: ReactNode;
+  outline?: boolean;
+  onClick?: () => void;
 };
 
 const Button = (props: IButtonProps) => {
   const btnClass = classNames(
-    // Base button styles
-    'inline-block rounded-md text-center text-white',
-    // Background colors
-    'bg-[#288658] hover:bg-[#24784f]',
-    // Size variations
-    props.xl
-      ? 'text-xl font-extrabold py-4 px-6' // XL size
-      : 'text-lg font-semibold py-2 px-4', // Base size
+    'inline-block',
+    'rounded-2xl',
+    'text-center',
+    'border-2',
+    {
+      'text-xl font-extrabold py-4 px-6': props.xl,
+      'text-lg font-semibold py-2 px-4': !props.xl,
+    },
+    props.outline
+      ? 'border-[#1c5f3e] bg-transparent text-[#1c5f3e] hover:bg-[#1c5f3e] hover:text-white'
+      : 'border-transparent bg-[#1c5f3e] text-white hover:bg-[#256545]',
   );
 
-  return <div className={btnClass}>{props.children}</div>;
+  return (
+    <button type="button" className={btnClass} onClick={props.onClick}>
+      {props.children}
+    </button>
+  );
 };
 
 export { Button };

@@ -18,7 +18,7 @@ const HeroOneButton = ({ language = 'en' }: HeroOneButtonProps) => {
         <div>{t.hero.title2}</div>
       </h1>
 
-      <div className="text-1xl mb-20 mt-8 text-gray-900 md:text-2xl">
+      <div className="mb-20 mt-8 text-1.5xl text-gray-900 md:text-2xl">
         {t.hero.subtitle}
       </div>
 

@@ -1,5 +1,10 @@
 import className from 'classnames';
 import { useRouter } from 'next/router';
+import React from 'react';
+
+import { Button } from '@/button/Button';
+import type { Language } from '@/utils/translations';
+import { translations } from '@/utils/translations';
 
 type IVerticalFeatureRowProps = {
   title: string;
@@ -10,6 +15,9 @@ type IVerticalFeatureRowProps = {
   isClickable?: boolean;
   onClick?: () => void;
   removeMarginTop?: boolean;
+  onMoreInfoClick?: () => void;
+  onTryNowClick?: () => void;
+  language: Language;
 };
 
 const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
@@ -41,9 +49,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
         <h3
-          className={`text-3xl font-semibold text-gray-900 ${
-            props.isClickable ? 'cursor-pointer hover:underline' : ''
-          }`}
+          className={`text-3xl font-semibold text-gray-900`}
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
           role={props.isClickable ? 'button' : undefined}
@@ -52,15 +58,25 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           {props.title}
         </h3>
         <div
-          className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9 ${
-            props.isClickable ? 'cursor-pointer hover:underline' : ''
-          }`}
+          className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9`}
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
           role={props.isClickable ? 'button' : undefined}
           tabIndex={props.isClickable ? 0 : -1}
         >
           {props.description}
+        </div>
+        <div className="mt-6 flex justify-center gap-4">
+          {props.onMoreInfoClick && (
+            <Button onClick={props.onMoreInfoClick}>
+              {translations[props.language].features.buttons.moreInfo}
+            </Button>
+          )}
+          {props.onTryNowClick && (
+            <Button onClick={props.onTryNowClick} outline>
+              {translations[props.language].features.buttons.tryNow}
+            </Button>
+          )}
         </div>
       </div>
 
