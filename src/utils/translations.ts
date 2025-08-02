@@ -83,7 +83,7 @@ export const translations = {
       reminders: {
         title: 'Water- en Verzorgingsherinneringen',
         description:
-          'Vergeet nooit meer om je planten water te geven of te bemesten. Stel aangepaste herinneringen in met de hulp van Plantative Dokter voor elke plant in je collectie, zodat ze de zorg krijgen die ze nodig hebben om te gedijen.',
+          'Vergeet nooit meer om je planten water te geven of te bemesten. Stel met Plantative Dokter aangepaste herinneringen in voor elke plant in je collectie, zodat ze de zorg krijgen die ze nodig hebben om gezond te blijven.',
       },
       buttons: {
         moreInfo: 'Meer informatie',
