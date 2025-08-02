@@ -26,6 +26,11 @@ export const translations = {
         description:
           "Get instant, personalized advice for your plants anytime. Whether you're dealing with diseases, watering questions, or need help identifying your plants, Plantative Doctor gives you expert guidance tailored to your specific situation.",
       },
+      reminders: {
+        title: 'Watering and Care Reminders',
+        description:
+          'Never forget to water or fertilize your plants again. Set custom reminders with the help of Plantative Doctor for each plant in your collection, ensuring they receive the care they need to thrive.',
+      },
       buttons: {
         moreInfo: 'More Information',
         tryNow: 'Try Now',
@@ -74,6 +79,11 @@ export const translations = {
         title: 'Expert Plantenverzorging',
         description:
           'Krijg gepersonaliseerd advies voor je planten, wanneer je maar wilt. Of je nu problemen hebt met ziektes, vragen over water geven, of hulp nodig hebt bij het identificeren van je planten, Plantative Doctor geeft je deskundig advies op maat voor jouw specifieke situatie.',
+      },
+      reminders: {
+        title: 'Water- en Verzorgingsherinneringen',
+        description:
+          'Vergeet nooit meer om je planten water te geven of te bemesten. Stel aangepaste herinneringen in met de hulp van Plantative Dokter voor elke plant in je collectie, zodat ze de zorg krijgen die ze nodig hebben om te gedijen.',
       },
       buttons: {
         moreInfo: 'Meer informatie',

@@ -68,6 +68,19 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             language={language}
           />
         </ScrollFadeInSection>
+        <ScrollFadeInSection>
+          <VerticalFeatureRow
+            title={t.features.reminders.title}
+            description={t.features.reminders.description}
+            image="/assets/images/watering_reminders.webp"
+            imageAlt="Plant care reminders illustration"
+            reverse
+            onTryNowClick={() => {
+              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
+            }}
+            language={language}
+          />
+        </ScrollFadeInSection>
       </Section>
     </BackgroundSection>
   );
