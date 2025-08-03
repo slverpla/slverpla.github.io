@@ -79,15 +79,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={language === 'en' ? '/' : '/nl'}
-                className="text-sm sm:text-base md:text-xl"
-              >
-                {t.footer.newsletter}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={language === 'en' ? '/' : '/nl'}
+                href={`${language === 'en' ? '' : '/nl'}/about`}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.about}
