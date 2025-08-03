@@ -8,7 +8,7 @@ const AboutUsNL = () => (
         <h1 className="mb-8 text-3xl font-bold text-gray-900">Over Ons</h1>
 
         <p className="mb-8  text-lg leading-7 text-gray-700">
-          We begonnen met een simpel idee: planten delen en plantenkennis moet
+          Het begon met een simpel idee: planten delen en plantenkennis moet
           voor iedereen gratis en toegankelijk zijn. Wat begon als een paar
           gesprekken tijdens het uitgaan tussen vrienden over hoe
           plantenliefhebbers iets beters verdienden, is uitgegroeid tot iets

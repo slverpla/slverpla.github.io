@@ -8,7 +8,7 @@ const AboutUs = () => (
         <h1 className="mb-8 text-3xl font-bold text-gray-900">About Us</h1>
 
         <p className="mb-8  text-lg leading-7 text-gray-700">
-          We started with a simple belief: sharing plants and plant knowledge
+          It started with a simple idea: sharing plants and plant knowledge
           should be free and accessible to everyone. What began as some
           late-night chats among friends about how plant lovers deserved better
           has grown into something much bigger, a community-driven platform
