@@ -29,7 +29,7 @@ export const translations = {
       reminders: {
         title: 'Watering and Care Reminders',
         description:
-          'Never forget to water or fertilize your plants again. Set custom reminders with the help of Plantative Doctor for each plant in your collection, ensuring they receive the care they need to thrive.',
+          'Never forget to water or fertilize your plants again. With the help of Plantative Doctor you can set custom reminders for each plant in your collection, ensuring they receive the care they need to thrive.',
       },
       buttons: {
         moreInfo: 'More Information',
