@@ -1,7 +1,5 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 .splash-screen-background {
@@ -9,4 +7,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
+  height: 100vh; /* Fallback for older browsers */
+  height: 100svh; /* Small viewport height - excludes mobile browser UI changes */
+  
+  width: 100vw;
 }
