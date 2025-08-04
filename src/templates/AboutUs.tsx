@@ -12,7 +12,7 @@ const AboutUs = () => (
           should be free and accessible to everyone. What began as some
           late-night chats among friends about how plant lovers deserved better
           has grown into something much bigger, a community-driven platform
-          that&apos;s making the world a little greener every day.
+          that&apos;s making the world a bit greener every day.
         </p>
 
         <p className="mb-8 text-lg leading-7 text-gray-700">
@@ -36,11 +36,10 @@ const AboutUs = () => (
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
           Yes, we used AI to help build this app, but all the code was written
-          by real people. This isn&apos;t some quick AI-generated app. With all
+          by real people; this isn&apos;t some quick vibe coded app. With all
           the recent security problems happening online, we made sure that
-          humans handle all the security stuff. This means your messages,
-          photos, and private info stay between you and who you choose to share
-          with.
+          humans handle the security layer. This means your messages, photos,
+          and private info stay between you and who you choose to share with.
         </p>
 
         <p className="mb-8 text-lg leading-7 text-gray-700">
