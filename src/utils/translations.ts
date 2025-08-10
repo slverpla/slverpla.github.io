@@ -110,7 +110,7 @@ export const translations = {
       trading: {
         title: 'Zoek op de Marktplaats',
         description:
-          "Ontdek je ideale planten door te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
+          "Ontdek de ideale planten door te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
       },
       recognition: {
         title: 'Verkoop je planten',
