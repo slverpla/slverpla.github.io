@@ -23,7 +23,7 @@ const HeroOneButton = ({ language = 'en' }: HeroOneButtonProps) => {
       </div>
 
       <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative`}>
-        <Button xl>{t.hero.cta}</Button>
+        <Button size="lg">{t.hero.cta}</Button>
       </Link>
     </header>
   );

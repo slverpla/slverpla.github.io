@@ -1,7 +1,10 @@
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
+import type { Language } from '@/utils/translations';
+
 type INavbarProps = {
+  language?: Language;
   logo: ReactNode;
   children: ReactNode;
 };
@@ -9,7 +12,10 @@ type INavbarProps = {
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="flex flex-wrap items-center justify-between">
     <div>
-      <Link href="/" aria-label="Homepage">
+      <Link
+        href={`${props.language === 'en' ? '' : '/nl'}/`}
+        aria-label="Homepage"
+      >
         {props.logo}
       </Link>
     </div>

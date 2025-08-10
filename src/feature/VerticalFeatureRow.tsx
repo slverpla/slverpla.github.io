@@ -15,8 +15,6 @@ type IVerticalFeatureRowProps = {
   isClickable?: boolean;
   onClick?: () => void;
   removeMarginTop?: boolean;
-  onMoreInfoClick?: () => void;
-  onTryNowClick?: () => void;
   language: Language;
 };
 
@@ -34,7 +32,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   const router = useRouter();
 
   const handleInteraction = () => {
-    if (props.isClickable && props.onClick) {
+    if (props.onClick) {
       props.onClick();
     }
   };
@@ -52,8 +50,8 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           className={`text-3xl font-semibold text-gray-900`}
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
-          role={props.isClickable ? 'button' : undefined}
-          tabIndex={props.isClickable ? 0 : -1}
+          role={props.onClick ? 'button' : undefined}
+          tabIndex={props.onClick ? 0 : -1}
         >
           {props.title}
         </h3>
@@ -61,22 +59,27 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9`}
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
-          role={props.isClickable ? 'button' : undefined}
-          tabIndex={props.isClickable ? 0 : -1}
+          role={props.onClick ? 'button' : undefined}
+          tabIndex={props.onClick ? 0 : -1}
         >
           {props.description}
         </div>
         <div className="mt-6 flex justify-center gap-4">
-          {props.onMoreInfoClick && (
-            <Button onClick={props.onMoreInfoClick}>
+          {props.onClick && (
+            <Button onClick={props.onClick}>
               {translations[props.language].features.buttons.moreInfo}
             </Button>
           )}
-          {props.onTryNowClick && (
-            <Button onClick={props.onTryNowClick} outline>
-              {translations[props.language].features.buttons.tryNow}
-            </Button>
-          )}
+          <Button
+            onClick={() => {
+              router.push(
+                `${props.language === 'en' ? '' : '/nl'}/get-plantative`,
+              );
+            }}
+            outline
+          >
+            {translations[props.language].features.buttons.tryNow}
+          </Button>
         </div>
       </div>
 
@@ -85,12 +88,12 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           className="group relative"
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
-          role={props.isClickable ? 'button' : undefined}
-          tabIndex={props.isClickable ? 0 : -1}
+          role={props.onClick ? 'button' : undefined}
+          tabIndex={props.onClick ? 0 : -1}
         >
           <div
             className={`mx-auto max-w-sm ${
-              props.isClickable ? 'cursor-pointer' : ''
+              props.onClick ? 'cursor-pointer' : ''
             }`}
           >
             <img

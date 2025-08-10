@@ -12,14 +12,14 @@ export const translations = {
     },
     features: {
       trading: {
-        title: 'Buy and sell plants',
+        title: 'Search the Marketplace',
         description:
-          "Connect with plant enthusiasts worldwide to buy, sell, or trade your favorite plants. Whether you're looking for something special or want to find a new home for your extra plants, our community is the perfect place to grow your collection.",
+          "Discover the perfect plants by searching our marketplace with names, care requirements, or even photos. Connect with plant enthusiasts worldwide to find exactly what you're looking for or help others discover the plants they need to grow their collection.",
       },
       recognition: {
-        title: 'Plant Recognition',
+        title: 'Sell your plants',
         description:
-          'Identify any plant with a simple snap of your camera. Our AI-powered recognition system helps you discover species names, care requirements, and interesting facts about the plants you encounter in gardens, parks, or your daily life.',
+          'Add any plant and its specifics with a simple snap of your camera. Our AI-powered recognition system helps you discover species, names and care requirements so your buyers can find the exact plant they need.',
       },
       expert: {
         title: 'Expert Plant Care',
@@ -35,6 +35,26 @@ export const translations = {
         moreInfo: 'More Information',
         tryNow: 'Try Now',
       },
+      search: {
+        categoryLabel: 'Category',
+        allCategories: 'All Categories',
+        plants: 'Plants',
+        cuttings: 'Cuttings',
+        seeds: 'Seeds',
+        searchLabel: 'Search',
+        searchButton: 'Search',
+      },
+    },
+    plantativeDoctor: {
+      title: 'Plantative Doctor',
+    },
+    marketplace: {
+      securityCheck:
+        'Please complete the security check to view the marketplace.',
+      title: 'Plant Marketplace',
+      description: 'Explore our marketplace to buy, sell, or trade plants.',
+      loading: 'Loading plants...',
+      noPlants: 'No plants available at the moment.',
     },
     download: {
       title: 'Get Plantative\nfor iOS/Android',
@@ -51,6 +71,29 @@ export const translations = {
       terms: 'Terms',
       privacyPolicy: 'Privacy Policy',
     },
+    searchCategories: {
+      plants: 'Plants',
+      seeds: 'Seeds',
+      produce: 'Produce',
+      tools: 'Tools',
+      grandGreens: 'Grand\nGreens',
+      sprouts: 'Sprouts',
+      gardener: 'Gardener',
+      homeLover: 'Home\nLover',
+      pennyPincher: 'Penny\nPincher',
+      lowLight: 'Low\nLight\nLover',
+      casualGreenThumb: 'Casual\nGreen\nThumb',
+      surprise: 'Surprise\nMe',
+      flowerFanatic: 'Flower\nFanatic',
+      packAndSend: 'Pack &\nSend',
+    },
+    searchBar: {
+      categories: 'Categories',
+      categoryFilter: 'Set a category filter',
+      what: 'What?',
+      placeholder: 'What are you looking for?',
+      ariaLabel: 'Search',
+    },
   },
   nl: {
     nav: {
@@ -60,20 +103,19 @@ export const translations = {
     hero: {
       title1: 'Ruil, deel en zorg voor planten met',
       title2: 'Plantative',
-      subtitle:
-        'De plaats waar plantenliefhebbers samenkomen. Ruil je planten en laat vriendschappen bloeien.',
+      subtitle: 'De plaats waar plantenliefhebbers samenkomen.',
       cta: 'Download Nu Gratis',
     },
     features: {
       trading: {
-        title: 'Koop en verkoop planten',
+        title: 'Zoek op de Marktplaats',
         description:
-          'Connect met plantenliefhebbers wereldwijd om je favoriete planten te kopen, verkopen of ruilen. Of je nu op zoek bent naar iets speciaals of een nieuwe thuis zoekt voor je extra planten, onze community is de perfecte plek om je collectie uit te breiden.',
+          "Ontdek je ideale planten door te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
       },
       recognition: {
-        title: 'Plantenherkenning',
+        title: 'Verkoop je planten',
         description:
-          'Identificeer elke plant met een simpele foto. Ons AI-gestuurde herkenningssysteem helpt je soortnamen, verzorgingseisen en interessante feiten te ontdekken over de planten die je tegenkomt in tuinen, parken of je dagelijks leven.',
+          'Voeg elke plant en zijn specificaties toe met een simpele foto. Ons AI-gestuurd herkenningssysteem helpt je soorten, namen en verzorgingseisen te ontdekken zodat je kopers de exacte plant kunnen vinden die ze nodig hebben.',
       },
       expert: {
         title: 'Expert Plantenverzorging',
@@ -89,6 +131,27 @@ export const translations = {
         moreInfo: 'Meer informatie',
         tryNow: 'Probeer nu',
       },
+      search: {
+        categoryLabel: 'Categorie',
+        allCategories: 'Alle Categorieën',
+        plants: 'Planten',
+        cuttings: 'Stekjes',
+        seeds: 'Zaden',
+        searchLabel: 'Zoek',
+        searchButton: 'Zoek',
+      },
+    },
+    plantativeDoctor: {
+      title: 'Plantative Dokter',
+    },
+    marketplace: {
+      securityCheck:
+        'Voltooi de beveiligingscontrole om de marktplaats te bekijken.',
+      title: 'Planten Marktplaats',
+      description:
+        'Verken onze marktplaats om planten te kopen, verkopen of ruilen.',
+      loading: 'Planten laden...',
+      noPlants: 'Op dit moment zijn er geen planten beschikbaar.',
     },
     download: {
       title: 'Download Plantative\nvoor iOS/Android',
@@ -104,6 +167,29 @@ export const translations = {
       about: 'Over ons',
       terms: 'Voorwaarden',
       privacyPolicy: 'Privacybeleid',
+    },
+    searchCategories: {
+      plants: 'Planten',
+      seeds: 'Zaden',
+      produce: 'Oogst',
+      tools: 'Gereed-\\nschap',
+      grandGreens: 'Volgroeid',
+      sprouts: 'Stekjes',
+      gardener: 'Buiten-\\nmens',
+      homeLover: 'Groene\\nHuismus',
+      pennyPincher: 'Prijs-\\nbewust',
+      lowLight: 'Schaduw-\\nmeester',
+      casualGreenThumb: 'Casual\\nTuinier',
+      surprise: 'Verras\\nMe',
+      flowerFanatic: 'Bloemen-\\nfanaat',
+      packAndSend: 'Verpak &\\nVerzend',
+    },
+    searchBar: {
+      categories: 'Categorieën',
+      categoryFilter: 'Stel een categorie in',
+      what: 'Wat?',
+      placeholder: 'Waar ben je naar op zoek?',
+      ariaLabel: 'Zoeken',
     },
   },
 };

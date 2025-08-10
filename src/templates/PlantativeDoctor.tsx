@@ -6,7 +6,7 @@ import { Button } from '@/button/Button';
 const PlantativeDoctor = () => (
   <>
     {/* Header section with image */}
-    <div className="mt-0 flex flex-wrap items-center justify-center">
+    <div className="-mt-20 flex flex-wrap items-center justify-center">
       <div className="w-full p-4 sm:w-1/2">
         <div className="mx-auto max-w-sm">
           <img
@@ -22,6 +22,10 @@ const PlantativeDoctor = () => (
           />
         </div>
       </div>
+    </div>
+
+    <div className="text-center">
+      <h1 className="text-4xl font-bold text-gray-900">Plantative Doctor</h1>
     </div>
 
     {/* Main content */}
@@ -64,7 +68,7 @@ const PlantativeDoctor = () => (
         </h2>
         <div className="prose prose-lg max-w-none">
           <p className="mb-4 text-lg leading-7 text-gray-700">
-            <strong>Plant Detective:</strong> Not sure what that plant is
+            <strong>Plant Recognition:</strong> Not sure what that plant is
             called? Snap a photo and get an instant identification, plus all the
             care information you need to keep it thriving.
           </p>
@@ -90,7 +94,7 @@ const PlantativeDoctor = () => (
         {/* Call to action */}
         <div className="mt-16 text-center">
           <Link href={`/get-plantative`}>
-            <Button xl>{'Try Plantative Doctor'}</Button>
+            <Button size="lg">{'Try Plantative Doctor'}</Button>
           </Link>
         </div>
       </div>

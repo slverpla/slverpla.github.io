@@ -19,7 +19,7 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
     <div>
       <div className="splash-screen-background fixed inset-0 -z-10" />
       <Section yPadding="py-6">
-        <NavbarTwoColumns logo={<Logo responsive />}>
+        <NavbarTwoColumns logo={<Logo responsive />} language={language}>
           <div className="pr-1 md:pr-8">
             <ul className="flex items-center space-x-8 text-black">
               <li className="hidden md:block">

@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 
+import { SearchableVerticalFeatureRow } from '@/feature/SearchableVerticalFeatureRow';
 import { VerticalFeatureRow } from '@/feature/VerticalFeatureRow';
 import { BackgroundSection } from '@/layout/BackgroundSection';
 import { Section } from '@/layout/Section';
@@ -20,15 +21,12 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
     <BackgroundSection yPadding="pb-16">
       <Section yPadding="py-8">
         <ScrollFadeInSection>
-          <VerticalFeatureRow
+          <SearchableVerticalFeatureRow
             title={t.features.trading.title}
             description={t.features.trading.description}
-            image="/assets/images/buying_and_selling_blur_bg.webp"
+            image="/assets/images/search_plants.webp"
             imageAlt="Illustration of people trading plants"
             removeMarginTop
-            onTryNowClick={() => {
-              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
-            }}
             language={language}
           />
         </ScrollFadeInSection>
@@ -36,12 +34,9 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
           <VerticalFeatureRow
             title={t.features.recognition.title}
             description={t.features.recognition.description}
-            image="/assets/images/search_plants.webp"
+            image="/assets/images/buying_and_selling_blur_bg.webp"
             imageAlt="Plant identification through camera illustration"
             reverse
-            onTryNowClick={() => {
-              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
-            }}
             language={language}
           />
         </ScrollFadeInSection>
@@ -51,19 +46,10 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             description={t.features.expert.description}
             image="/assets/images/doctor_edited.webp"
             imageAlt="Plant care expert consultation illustration"
-            isClickable
             onClick={() => {
               router.push(
                 `${language === 'en' ? '' : '/nl'}/plantative-doctor`,
               );
-            }}
-            onMoreInfoClick={() => {
-              router.push(
-                `${language === 'en' ? '' : '/nl'}/plantative-doctor`,
-              );
-            }}
-            onTryNowClick={() => {
-              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
             }}
             language={language}
           />
@@ -75,9 +61,6 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/watering_reminders.webp"
             imageAlt="Plant care reminders illustration"
             reverse
-            onTryNowClick={() => {
-              router.push(`${language === 'en' ? '' : '/nl'}/get-plantative`);
-            }}
             language={language}
           />
         </ScrollFadeInSection>
