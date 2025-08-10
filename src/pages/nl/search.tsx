@@ -29,7 +29,7 @@ const SearchPage = () => {
       ) : (
         <div className="flex flex-col items-center justify-center p-8">
           <Turnstile
-            siteKey="0x4AAAAAABoqN97JRiRd8u4T"
+            siteKey={process.env.NEXT_PUBLIC_CLOUDFLARE_SITE_KEY!}
             onSuccess={() => setIsVerified(true)}
           />
           <p className="mb-4 mt-8 text-center text-lg">
