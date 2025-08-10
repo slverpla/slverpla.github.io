@@ -66,7 +66,7 @@ const PlantCard = ({
 
   return (
     <div
-      className="cursor-pointer rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className="min-w-56 max-w-60 cursor-pointer rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
       onClick={handleCardClick}
       onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
       role="button"

@@ -283,16 +283,26 @@ const SearchBar = ({
     searchCategories.find((c) => c.id === selectedCategoryId)?.name || null;
 
   return (
-    <div className="flex justify-center p-10 font-sans">
+    <div className="flex justify-center p-4 font-sans sm:p-10">
       <div ref={dropdownRef} className="relative w-full max-w-[50rem]">
         <div className="flex items-center rounded-full border border-gray-200 bg-white p-2 shadow-lg">
           <div
             className="w-1/3 cursor-pointer rounded-full px-4 py-2 transition-colors hover:bg-gray-100"
             onClick={() => setDropdownOpen(!isDropdownOpen)}
           >
-            <p className="text-xs font-bold">{searchBar.categories}</p>
+            <p className="hidden text-xs font-bold sm:block">
+              {searchBar.categories}
+            </p>
             <p
-              className={className('truncate text-sm', {
+              className={className('truncate text-sm sm:hidden', {
+                'text-gray-900': selectedCategoryName,
+                'text-gray-500': !selectedCategoryName,
+              })}
+            >
+              {selectedCategoryName || searchBar.categories}
+            </p>
+            <p
+              className={className('hidden truncate text-sm sm:block', {
                 'text-gray-900': selectedCategoryName,
                 'text-gray-500': !selectedCategoryName,
               })}
@@ -302,7 +312,9 @@ const SearchBar = ({
           </div>
           <div className="h-10 border-l border-gray-200" />
           <div className="flex-1 px-4 py-2">
-            <p className="text-xs font-bold">{searchBar.what}</p>
+            <p className="hidden text-xs font-bold sm:block">
+              {searchBar.what}
+            </p>
             <input
               type="text"
               value={searchText}

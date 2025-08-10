@@ -50,7 +50,9 @@ const Marketplace = ({
   return (
     <>
       <div className="-mt-10 text-center">
-        <h1 className="text-4xl font-bold text-black">{t.marketplace.title}</h1>
+        <h1 className="hidden text-4xl font-bold text-black sm:block">
+          {t.marketplace.title}
+        </h1>
       </div>
 
       <div className="mx-auto items-center px-4">
@@ -66,7 +68,7 @@ const Marketplace = ({
           {!loading && plants.length === 0 && (
             <p className="text-center">{t.marketplace.noPlants}</p>
           )}
-          <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
+          <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
             {plants.map((plant) => (
               <PlantCard
                 key={plant.id}
