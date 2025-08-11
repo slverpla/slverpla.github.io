@@ -55,6 +55,27 @@ export const translations = {
       description: 'Explore our marketplace to buy, sell, or trade plants.',
       loading: 'Loading plants...',
       noPlants: 'No plants available at the moment.',
+      auth: {
+        title: 'How can we reach you?',
+        email: 'Continue with email',
+        google: 'With Google',
+        apple: 'With Apple',
+        facebook: 'With Facebook',
+        or: 'or',
+        confirmEmail: 'Verify your email address!',
+        confirmEmailSubTitle:
+          'Welcome, Plant Lover! Verify Your Email to Join Our Growing Community and Start Trading Beautiful Plants.',
+        continue: 'Continue',
+        resendEmail: 'Resend Verification Email',
+      },
+      createAd: {
+        title:
+          'We could not find any items for your query. Place an ad and Plantative will contact you once we find the ideal match for you.',
+        button: 'Place an ad',
+        created:
+          'The ad has been created. We will contact the user once we found a match for you.',
+        viewInApp: 'View in app',
+      },
     },
     download: {
       title: 'Get Plantative\nfor iOS/Android',
@@ -76,16 +97,16 @@ export const translations = {
       seeds: 'Seeds',
       produce: 'Produce',
       tools: 'Tools',
-      grandGreens: 'Grand\\nGreens',
+      grandGreens: 'Grand\nGreens',
       sprouts: 'Sprouts',
       gardener: 'Gardener',
-      homeLover: 'Home\\nLover',
-      pennyPincher: 'Penny\\nPincher',
-      lowLight: 'Low\\nLight\\nLover',
-      casualGreenThumb: 'Casual\\nGreen\\nThumb',
-      surprise: 'Surprise\\nMe',
-      flowerFanatic: 'Flower\\nFanatic',
-      packAndSend: 'Pack &\\nSend',
+      homeLover: 'Home\nLover',
+      pennyPincher: 'Penny\nPincher',
+      lowLight: 'Low\nLight\nLover',
+      casualGreenThumb: 'Casual\nGreen\nThumb',
+      surprise: 'Surprise\nMe',
+      flowerFanatic: 'Flower\nFanatic',
+      packAndSend: 'Pack &\nSend',
     },
     searchBar: {
       categories: 'Categories',
@@ -152,6 +173,27 @@ export const translations = {
         'Verken onze marktplaats om planten te kopen, verkopen of ruilen.',
       loading: 'Planten laden...',
       noPlants: 'Op dit moment zijn er geen planten beschikbaar.',
+      auth: {
+        title: 'Hoe kunnen we je bereiken?',
+        email: 'Ga verder met e-mail',
+        google: 'Met Google',
+        apple: 'Met Apple',
+        facebook: 'Met Facebook',
+        or: 'of',
+        confirmEmail: 'Verifieer je e-mailadres!',
+        confirmEmailSubTitle:
+          'Welkom, plantenliefhebber! Verifieer je e-mailadres om deel te nemen aan onze groeiende community en begin met het ruilen van prachtige planten.',
+        continue: 'Doorgaan',
+        resendEmail: 'Verzend e-mail opnieuw',
+      },
+      createAd: {
+        title:
+          'We konden geen producten vinden voor je zoekopdracht. Plaats een zoekertje en Plantative contacteert je zodra we de beste match voor je hebben gevonden.',
+        button: 'Plaats een zoekertje',
+        created:
+          'Het zoekertje is aangemaakt. We contacteren je van zodra we een goede match voor je gevonden hebben.',
+        viewInApp: 'Bekijk in app',
+      },
     },
     download: {
       title: 'Download Plantative\nvoor iOS/Android',

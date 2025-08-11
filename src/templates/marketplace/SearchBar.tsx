@@ -283,7 +283,7 @@ const SearchBar = ({
     searchCategories.find((c) => c.id === selectedCategoryId)?.name || null;
 
   return (
-    <div className="flex justify-center p-4 font-sans sm:p-10">
+    <div className="flex justify-center px-0 py-4 font-sans sm:p-10">
       <div ref={dropdownRef} className="relative w-full max-w-[50rem]">
         <div className="flex items-center rounded-full border border-gray-200 bg-white p-2 shadow-lg">
           <div

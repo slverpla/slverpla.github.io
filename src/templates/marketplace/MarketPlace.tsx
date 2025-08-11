@@ -1,11 +1,13 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
+import AuthModal from '@/auth/AuthModal';
 import { BackgroundSection } from '@/layout/BackgroundSection';
 import { Section } from '@/layout/Section';
 import type { Language } from '@/utils/translations';
 import { translations } from '@/utils/translations';
 
+import CreateAdTeaser from './CreateAdTeaser';
 import { fetchPlantsFromFirestore } from './fetchplants';
 import type { Plant } from './PlantCard';
 import PlantCard from './PlantCard';
@@ -26,6 +28,7 @@ const Marketplace = ({
   const router = useRouter();
   const [plants, setPlants] = useState<Plant[]>([]);
   const [loading, setLoading] = useState(true);
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
 
   useEffect(() => {
     const fetchPlants = async () => {
@@ -66,7 +69,10 @@ const Marketplace = ({
         <Section description={t.marketplace.description} yPadding="py-8">
           {loading && <p className="text-center">{t.marketplace.loading}</p>}
           {!loading && plants.length === 0 && (
-            <p className="text-center">{t.marketplace.noPlants}</p>
+            <CreateAdTeaser
+              language={language}
+              onCTAClick={() => setIsAuthModalOpen(true)}
+            />
           )}
           <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
             {plants.map((plant) => (
@@ -80,6 +86,13 @@ const Marketplace = ({
           </div>
         </Section>
       </BackgroundSection>
+      <AuthModal
+        isOpen={isAuthModalOpen}
+        onClose={() => setIsAuthModalOpen(false)}
+        searchQuery={searchQuery}
+        category={category}
+        language={language}
+      />
     </>
   );
 };

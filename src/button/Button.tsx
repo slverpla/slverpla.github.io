@@ -23,6 +23,7 @@ const Button = (props: IButtonProps) => {
     'rounded-2xl',
     'text-center',
     'border-2',
+    'whitespace-nowrap',
     sizeStyles[size],
     outline
       ? 'border-[#1c5f3e] bg-transparent text-[#1c5f3e] hover:bg-[#1c5f3e] hover:text-white'
