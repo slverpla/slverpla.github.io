@@ -4,22 +4,8 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import type { Language } from '@/utils/translations';
 import { translations } from '@/utils/translations';
 
-// Utility function for conditional class names
-const className = (...args: any[]) => {
-  return args
-    .filter(Boolean)
-    .map((arg) => {
-      if (typeof arg === 'string') return arg;
-      if (typeof arg === 'object') {
-        return Object.entries(arg)
-          .filter(([, condition]) => condition)
-          .map(([cls]) => cls)
-          .join(' ');
-      }
-      return '';
-    })
-    .join(' ');
-};
+import CategoryTile from './CategoryTile';
+import { className } from './utils';
 
 const searchCategoryData = [
   {
@@ -93,80 +79,6 @@ const searchCategoryData = [
     image: '/assets/images/search_categories/pack_&_send.png',
   },
 ];
-
-interface Category {
-  id: string;
-  nameKey: string;
-  image: string;
-  name: string;
-}
-
-interface CategoryTileProps {
-  category: Category;
-  isSelected: boolean;
-  onSelect: () => void;
-}
-
-const CategoryTile: React.FC<CategoryTileProps> = ({
-  category,
-  isSelected,
-  onSelect,
-}) => {
-  return (
-    <div
-      onClick={onSelect}
-      className={className(
-        'relative cursor-pointer rounded-2xl transition-all duration-200',
-        'h-[5.5rem] min-w-40 max-w-44 flex-shrink-0 overflow-hidden',
-        {
-          'bg-gray-100 border border-[#1c5f3e]': isSelected,
-          'border-transparent bg-white': !isSelected,
-        },
-      )}
-      style={{
-        boxShadow: isSelected
-          ? '0 0 12px rgba(0, 0, 0, 0.25)'
-          : '0 0 8px rgba(0, 0, 0, 0.20)',
-        transition: 'all 0.2s ease-in-out',
-      }}
-      onMouseEnter={(e) => {
-        if (!isSelected) {
-          e.currentTarget.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
-        }
-      }}
-      onMouseLeave={(e) => {
-        if (!isSelected) {
-          e.currentTarget.style.boxShadow = '0 0 8px rgba(0, 0, 0, 0.15)';
-        }
-      }}
-    >
-      <div className="relative flex h-full flex-col justify-between p-3">
-        <div className="relative z-10">
-          <h4
-            className={className(
-              'text-base font-semibold leading-tight text-left whitespace-pre-line',
-              {
-                'text-gray-800': isSelected,
-                'text-gray-900': !isSelected,
-              },
-            )}
-          >
-            {category.name}
-          </h4>
-        </div>
-        <div
-          className="absolute -bottom-8 right-0 h-16 w-28 origin-bottom-right rotate-[18deg] rounded-lg"
-          style={{
-            backgroundImage: `url(${category.image})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: 'rotate(18deg)',
-          }}
-        />
-      </div>
-    </div>
-  );
-};
 
 interface SearchBarProps {
   language?: Language;
