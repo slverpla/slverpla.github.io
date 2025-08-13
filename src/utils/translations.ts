@@ -14,7 +14,7 @@ export const translations = {
       trading: {
         title: 'Search the Marketplace',
         description:
-          "Discover the perfect plants by searching our marketplace with names, care requirements, or even photos. Connect with plant enthusiasts worldwide to find exactly what you're looking for or help others discover the plants they need to grow their collection.",
+          "Discover the perfect plants by searching our plant marketplace with names, care requirements, or even photos. Connect with plant enthusiasts worldwide to find exactly what you're looking for or help others discover the plants they need to grow their collection.",
       },
       recognition: {
         title: 'Sell your plants',
@@ -131,7 +131,7 @@ export const translations = {
       trading: {
         title: 'Zoek op de Marktplaats',
         description:
-          "Ontdek de ideale planten door te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
+          "Ontdek de ideale planten door in onze plantenmarktplaats te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
       },
       recognition: {
         title: 'Verkoop je planten',
