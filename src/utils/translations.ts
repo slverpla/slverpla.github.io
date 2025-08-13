@@ -19,7 +19,7 @@ export const translations = {
       recognition: {
         title: 'Sell your plants',
         description:
-          'Add any plant and its specifics with a simple snap of your camera. Our AI-powered recognition system helps you discover species, names and care requirements so your buyers can find the exact plant they need.',
+          'Add any plant and its specifications with a simple snap of your camera. Our AI-powered recognition system helps you discover species, names and care requirements so your buyers can find the exact plant they need.',
       },
       expert: {
         title: 'Expert Plant Care',
