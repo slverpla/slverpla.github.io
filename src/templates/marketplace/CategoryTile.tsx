@@ -64,7 +64,7 @@ const CategoryTile: React.FC<CategoryTileProps> = ({
           </h4>
         </div>
         <div
-          className="absolute -bottom-6 right-0 h-14 w-24 origin-bottom-right rotate-[18deg] rounded-lg sm:-bottom-8 sm:h-16 sm:w-28"
+          className="absolute -bottom-6 right-0 h-12 w-20 origin-bottom-right rotate-[18deg] rounded-lg sm:-bottom-8 sm:h-16 sm:w-28"
           style={{
             backgroundImage: `url(${category.image})`,
             backgroundSize: 'cover',
