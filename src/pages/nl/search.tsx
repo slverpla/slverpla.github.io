@@ -14,7 +14,7 @@ const SearchPage = () => {
   const router = useRouter();
   const { q, category } = router.query;
 
-  const [isVerified, setIsVerified] = useState(true);
+  const [isVerified, setIsVerified] = useState(false);
 
   return (
     <div className="text-gray-600 antialiased">
