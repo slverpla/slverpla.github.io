@@ -22,7 +22,7 @@ const HeroOneButton = ({ language = 'en' }: HeroOneButtonProps) => {
         {t.hero.subtitle}
       </div>
 
-      <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative`}>
+      <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative/`}>
         <Button size="lg">{t.hero.cta}</Button>
       </Link>
     </header>

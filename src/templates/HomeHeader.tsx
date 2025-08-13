@@ -24,14 +24,16 @@ const HomeHeader = ({ language = 'en' }: HomeHeaderProps) => {
             <ul className="flex items-center space-x-8 text-black">
               <li className="hidden md:block">
                 <Link
-                  href={language === 'en' ? '/' : '/nl'}
+                  href={language === 'en' ? '/' : '/nl/'}
                   className="underline"
                 >
                   {t.nav.home}
                 </Link>
               </li>
               <li>
-                <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative`}>
+                <Link
+                  href={`${language === 'en' ? '' : '/nl'}/get-plantative/`}
+                >
                   {t.nav.getApp}
                 </Link>
               </li>

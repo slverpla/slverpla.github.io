@@ -56,7 +56,7 @@ const PlantCard = ({
   }, [plant.thumbnailUrl, imageError]);
 
   const handleCardClick = () => {
-    const basePath = language === 'en' ? '' : '/nl';
+    const basePath = language === 'en' ? '' : '/nl/';
     router.push(`${basePath}/get-plantative`);
   };
 

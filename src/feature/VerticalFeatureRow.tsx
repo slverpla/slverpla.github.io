@@ -73,7 +73,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           <Button
             onClick={() => {
               router.push(
-                `${props.language === 'en' ? '' : '/nl'}/get-plantative`,
+                `${props.language === 'en' ? '' : '/nl'}/get-plantative/`,
               );
             }}
             outline

@@ -45,12 +45,12 @@ const Auth: FC<IAuthProps> = ({ language, onClose, searchQuery, category }) => {
       const db = getFirestore();
       await setDoc(doc(db, 'wanteds', auth.currentUser.uid), {
         searchQuery: searchQuery ?? null,
-        category: category ?? null,
+        category: Number.isNaN(category) ? null : category,
         userId: auth.currentUser.uid,
         createdAt: serverTimestamp(),
       });
       sessionStorage.setItem('showWantedCreatedToast', 'true');
-      const path = language === 'nl' ? '/nl' : '/';
+      const path = language === 'nl' ? '/nl/' : '/';
       router.push(path);
     } catch (e: any) {
       setError(`Failed to create ad because: ${e.message}`); // TODO

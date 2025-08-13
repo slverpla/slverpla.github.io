@@ -33,7 +33,7 @@ const IndexNL = () => {
             message={t.marketplace.createAd.created}
             onClose={() => setShowToast(false)}
             buttonText={t.marketplace.createAd.viewInApp}
-            onButtonClick={() => router.push('/nl/get-plantative')}
+            onButtonClick={() => router.push('/nl/get-plantative/')}
           />
         )}
       </AnimatePresence>

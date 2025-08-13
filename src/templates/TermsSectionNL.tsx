@@ -24,11 +24,11 @@ const TermsOfServiceNL = () => {
 
               <p className="mb-8 text-gray-600">
                 We hebben deze{' '}
-                <Link href="/nl/terms" className="underline">
+                <Link href="/nl/terms/" className="underline">
                   Servicevoorwaarden
                 </Link>{' '}
                 (&rsquo;Voorwaarden&rsquo;) en{' '}
-                <Link href="/nl/privacy-policy" className="underline">
+                <Link href="/nl/privacy-policy/" className="underline">
                   Privacybeleid
                 </Link>{' '}
                 (samen de &rsquo;Gebruikersovereenkomst&rsquo;) opgesteld om

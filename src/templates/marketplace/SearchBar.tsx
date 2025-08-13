@@ -129,10 +129,10 @@ const SearchBar = ({
 
     if (params.toString()) {
       router.push(
-        `${language === 'en' ? '' : '/nl'}/search?${params.toString()}`,
+        `${language === 'en' ? '' : '/nl'}/marketplace?${params.toString()}`,
       );
     } else {
-      router.push(`${language === 'en' ? '' : '/nl'}/search`);
+      router.push(`${language === 'en' ? '' : '/nl'}/marketplace/`);
     }
   };
 

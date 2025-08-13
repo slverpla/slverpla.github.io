@@ -94,7 +94,7 @@ const PlantativeDoctorNL = () => (
 
         {/* Call to action */}
         <div className="mt-16 text-center">
-          <Link href={`/nl/get-plantative`}>
+          <Link href={`/nl/get-plantative/`}>
             <Button size="lg">{'Probeer Plantative Dokter'}</Button>
           </Link>
         </div>

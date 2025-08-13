@@ -23,7 +23,7 @@ const GetAppHeader = ({ language = 'en' }: GetAppHeaderProps) => {
             </li>
             <li className="hidden md:block">
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/get-plantative`}
+                href={`${language === 'en' ? '' : '/nl'}/get-plantative/`}
                 className="underline"
               >
                 {t.nav.getApp}

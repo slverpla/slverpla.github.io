@@ -63,7 +63,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
           >
             <li>
               <Link
-                href={language === 'en' ? '/' : '/nl'}
+                href={language === 'en' ? '/' : '/nl/'}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.home}
@@ -71,7 +71,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/get-plantative`}
+                href={`${language === 'en' ? '' : '/nl'}/get-plantative/`}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.getApp}
@@ -79,7 +79,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/about`}
+                href={`${language === 'en' ? '' : '/nl'}/about/`}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.about}
@@ -87,7 +87,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/terms`}
+                href={`${language === 'en' ? '' : '/nl'}/terms/`}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.terms}
@@ -95,7 +95,7 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/privacy-policy`}
+                href={`${language === 'en' ? '' : '/nl'}/privacy-policy/`}
                 className="text-sm sm:text-base md:text-xl"
               >
                 {t.footer.privacyPolicy}

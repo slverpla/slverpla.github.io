@@ -37,7 +37,7 @@ const SearchableVerticalFeatureRow = (
       const params = new URLSearchParams();
       params.set('q', searchText.trim());
       router.push(
-        `${props.language === 'en' ? '' : '/nl'}/search?${params.toString()}`,
+        `${props.language === 'en' ? '' : '/nl'}/marketplace?${params.toString()}`,
       );
     }
   };

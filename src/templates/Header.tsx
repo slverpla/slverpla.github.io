@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ language = 'en' }) => {
             <Link href={language === 'en' ? '/' : '/nl'}>{t.nav.home}</Link>
           </li>
           <li className="hidden md:block">
-            <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative`}>
+            <Link href={`${language === 'en' ? '' : '/nl'}/get-plantative/`}>
               {t.nav.getApp}
             </Link>
           </li>
