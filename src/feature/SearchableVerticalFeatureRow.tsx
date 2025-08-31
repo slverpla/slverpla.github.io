@@ -45,7 +45,7 @@ const SearchableVerticalFeatureRow = (
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3 className="text-3xl font-semibold text-gray-900">{props.title}</h3>
+        <h2 className="text-3xl font-semibold text-gray-900">{props.title}</h2>
         <p
           className={`mt-5 text-base leading-7 text-gray-600 md:mt-6 md:text-xl md:leading-9`}
         >

@@ -5,6 +5,7 @@ import { Footer } from '@/templates/Footer';
 import { GetAppHeader } from '@/templates/GetAppHeader';
 import { DownloadSection } from '@/templates/GetAppSection';
 import { AppConfig } from '@/utils/AppConfig';
+import { translations } from '@/utils/translations';
 
 const isMobile = () => {
   if (typeof window === 'undefined') return false;
@@ -12,6 +13,7 @@ const isMobile = () => {
 };
 
 const GetTheApp = () => {
+  const t = translations.en;
   useEffect(() => {
     const handleMobileRedirect = () => {
       // Only redirect on mobile devices
@@ -42,7 +44,7 @@ const GetTheApp = () => {
 
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={AppConfig.title} description={AppConfig.description} />
+      <Meta title={t.seo.getApp.title} description={t.seo.getApp.description} />
 
       <GetAppHeader />
       <DownloadSection />

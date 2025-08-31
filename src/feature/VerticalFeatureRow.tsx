@@ -46,7 +46,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h3
+        <h2
           className={`text-3xl font-semibold text-gray-900`}
           onClick={handleInteraction}
           onKeyDown={handleKeyDown}
@@ -54,7 +54,7 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
           tabIndex={props.onClick ? 0 : -1}
         >
           {props.title}
-        </h3>
+        </h2>
         <div
           className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9`}
           onClick={handleInteraction}

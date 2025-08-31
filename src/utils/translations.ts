@@ -1,5 +1,47 @@
 export const translations = {
   en: {
+    seo: {
+      home: {
+        title: 'Plantative: Trade, Share, and Discover New Plants',
+        description:
+          'Join the Plantative community to trade, sell, and share plants and cuttings with fellow enthusiasts. Discover new species and grow your collection with ease.',
+      },
+      about: {
+        title: 'About Plantative | Our Mission and Story',
+        description:
+          'Learn about the mission behind Plantative, the team dedicated to connecting plant lovers, and our journey in building a global green community.',
+      },
+      getApp: {
+        title: 'Download the Plantative App for iOS & Android',
+        description:
+          'Get the free Plantative app on the Apple App Store and Google Play Store. Start trading plants, getting expert advice, and setting care reminders today.',
+      },
+      marketplace: {
+        title: 'Plant Marketplace | Buy, Sell & Trade Plants Locally',
+        description:
+          'Explore the Plantative marketplace to find a wide variety of plants, from common houseplants to rare species. List your own plants for sale or trade with others.',
+      },
+      plantDoctor: {
+        title: 'Plantative Doctor | Expert Plant Care Advice',
+        description:
+          'Got a sick plant? Use the Plantative Doctor to diagnose issues, get treatment recommendations, and receive personalized care tips from plant experts.',
+      },
+      privacy: {
+        title: 'Privacy Policy | Plantative',
+        description:
+          'Read the official Plantative Privacy Policy to understand how we collect, use, and protect your personal data across our app and website.',
+      },
+      terms: {
+        title: 'Terms of Service | Plantative',
+        description:
+          'Review the Terms of Service for using the Plantative app and website. Understand your rights and responsibilities within our community.',
+      },
+      notFound: {
+        title: '404: Page Not Found | Plantative',
+        description:
+          "Oops! The page you're looking for doesn't exist. Return to the homepage to continue exploring the world of plants with Plantative.",
+      },
+    },
     nav: {
       home: 'Home',
       getApp: 'Get the App',
@@ -117,6 +159,48 @@ export const translations = {
     },
   },
   nl: {
+    seo: {
+      home: {
+        title: 'Plantative: Ruil, Deel en Ontdek Nieuwe Planten',
+        description:
+          'Word lid van de Plantative-community om planten en stekjes te ruilen, verkopen en delen met andere liefhebbers. Ontdek nieuwe soorten en breid je collectie uit.',
+      },
+      about: {
+        title: 'Over Plantative | Onze Missie en Verhaal',
+        description:
+          'Lees meer over de missie van Plantative, het team dat plantenliefhebbers verbindt en onze reis naar een wereldwijde groene gemeenschap.',
+      },
+      getApp: {
+        title: 'Download de Plantative App voor iOS & Android',
+        description:
+          'Download de gratis Plantative-app in de Apple App Store en Google Play Store. Begin vandaag nog met het ruilen van planten, krijg deskundig advies en stel zorg-herinneringen in.',
+      },
+      marketplace: {
+        title: 'Plantenmarktplaats | Koop, Verkoop & Ruil Lokaal',
+        description:
+          'Verken de Plantative-marktplaats om een breed scala aan planten te vinden, van gewone kamerplanten tot zeldzame soorten. Bied je eigen planten te koop aan of ruil met anderen.',
+      },
+      plantDoctor: {
+        title: 'Plantative Dokter | Deskundig Plantenadvies',
+        description:
+          'Heb je een zieke plant? Gebruik de Plantative Dokter om problemen te diagnosticeren, behandeladvies te krijgen en gepersonaliseerde verzorgingstips van plantenexperts te ontvangen.',
+      },
+      privacy: {
+        title: 'Privacybeleid | Plantative',
+        description:
+          'Lees het officiële privacybeleid van Plantative om te begrijpen hoe we uw persoonlijke gegevens verzamelen, gebruiken en beschermen via onze app en website.',
+      },
+      terms: {
+        title: 'Servicevoorwaarden | Plantative',
+        description:
+          'Bekijk de servicevoorwaarden voor het gebruik van de Plantative-app en -website. Begrijp uw rechten en verantwoordelijkheden binnen onze gemeenschap.',
+      },
+      notFound: {
+        title: '404: Pagina Niet Gevonden | Plantative',
+        description:
+          'Oeps! De pagina die je zoekt bestaat niet. Ga terug naar de startpagina om de wereld van planten verder te verkennen met Plantative.',
+      },
+    },
     nav: {
       home: 'Home',
       getApp: 'Download de App',

@@ -6,7 +6,6 @@ import { Meta } from '@/layout/Meta';
 import { Footer } from '@/templates/Footer';
 import { Header } from '@/templates/Header';
 import MarketPlace from '@/templates/marketplace/MarketPlace';
-import { AppConfig } from '@/utils/AppConfig';
 import { translations } from '@/utils/translations';
 
 const SearchPage = () => {
@@ -18,7 +17,10 @@ const SearchPage = () => {
 
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={AppConfig.title} description={AppConfig.description} />
+      <Meta
+        title={t.seo.marketplace.title}
+        description={t.seo.marketplace.description}
+      />
       <Header language="nl" />
       {isVerified ? (
         <MarketPlace
