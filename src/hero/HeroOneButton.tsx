@@ -15,7 +15,7 @@ const HeroOneButton = ({ language = 'en' }: HeroOneButtonProps) => {
     <header className="mb-32 px-4 text-center">
       <h1 className="-mt-16 text-4xl font-bold leading-none text-gray-900 md:mt-0 md:text-6xl">
         <div>{t.hero.title1}</div>
-        <div>{t.hero.title2}</div>
+        <div className="mt-2">{t.hero.title2}</div>
       </h1>
 
       <div className="mb-20 mt-8 text-1.5xl font-semibold text-gray-900 md:text-3xl">
