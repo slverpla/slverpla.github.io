@@ -109,9 +109,8 @@ const todos = [
     completed: false,
     description:
       'We zouden directors zijn, app zit bij mij en lenen we uit en kunnen onszelf max 1.5k per jaar uit keren, maar geven vooral aan goede doelen en herinvesteren in ons bedrijf.',
-    date: 'Jan-Mar',
+    date: 'Jan-Feb',
   },
-
   {
     id: 7,
     title: 'Contact people in Facebook groups',
