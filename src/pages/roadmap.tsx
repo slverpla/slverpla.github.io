@@ -51,6 +51,22 @@ const todos = [
     date: 'Mar-Apr',
   },
   {
+    id: 11,
+    title: 'Add PlantStore users',
+    assignees: ['Seba'],
+    category: 'Development',
+    completed: false,
+    date: 'Feb-Apr',
+  },
+  {
+    id: 10,
+    title: 'Final bug fixes and improvements',
+    assignees: ['Seba'],
+    category: 'Development',
+    completed: false,
+    date: 'Feb-Apr',
+  },
+  {
     id: 3,
     title: 'Test and final bug fixes and community posts fixes',
     assignees: ['Seba', 'Maarten', 'Nele'],
