@@ -68,7 +68,7 @@ const todos = [
   },
   {
     id: 3,
-    title: 'Test and final bug fixes and community posts fixes',
+    title: 'Test and find final bugs',
     assignees: ['Seba', 'Maarten', 'Nele'],
     category: 'QA',
     completed: false,
