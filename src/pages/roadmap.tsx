@@ -114,7 +114,7 @@ const todos = [
 
   {
     id: 7,
-    title: 'Send people in Facebook groups',
+    title: 'Contact people in Facebook groups',
     assignees: ['Maarten'],
     category: 'Marketing',
     completed: false,
@@ -156,6 +156,21 @@ export default function App() {
       ),
     );
   };
+
+  const months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
 
   return (
     <div className="min-h-screen bg-gray-50 p-4 font-sans md:p-8">
@@ -269,6 +284,72 @@ export default function App() {
                 />
               </AreaChart>
             </ResponsiveContainer>
+          </div>
+          <div className="mt-8">
+            <div className="grid grid-cols-12">
+              {months.map((month) => (
+                <div
+                  key={month}
+                  className="border-r border-gray-200 p-2 text-center text-sm font-medium text-gray-500"
+                >
+                  {month}
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 space-y-2">
+              {todoList.map((todo) => {
+                if (todo.completed) {
+                  return null;
+                }
+                const [startMonthStr, endMonthStr] = todo.date.split('-');
+                const startMonthIndex = months.findIndex(
+                  (m) => m.toLowerCase() === startMonthStr?.toLowerCase(),
+                );
+                const endMonthIndex = months.findIndex(
+                  (m) =>
+                    m.toLowerCase() ===
+                    (endMonthStr ?? startMonthStr)?.toLowerCase(),
+                );
+
+                if (startMonthIndex === -1 || endMonthIndex === -1) {
+                  return null;
+                }
+
+                const gridColumnStart = startMonthIndex + 1;
+                const gridColumnEnd = endMonthIndex + 2;
+
+                const assigneeColors: Record<string, string> = {
+                  Seba: 'bg-blue-500',
+                  Maarten: 'bg-emerald-500',
+                  Nele: 'bg-rose-500',
+                };
+                let color;
+                if (todo.assignees.length > 1) {
+                  color = 'bg-gray-700 hover:bg-gray-800'; // Special color for multiple assignees
+                } else if (todo.assignees.length === 1 && todo.assignees[0]) {
+                  color =
+                    assigneeColors[todo.assignees[0]] ||
+                    'bg-gray-500 hover:bg-gray-600';
+                } else {
+                  color = 'bg-gray-500 hover:bg-gray-600'; // Default if no assignees
+                }
+
+                return (
+                  <div key={todo.id} className="grid grid-cols-12">
+                    <div
+                      className={`cursor-pointer rounded-lg p-2 text-white transition-all duration-200 hover:scale-105 ${color}`}
+                      style={{
+                        gridColumn: `${gridColumnStart} / ${gridColumnEnd}`,
+                      }}
+                      title={`${todo.title} - ${todo.assignees.join(', ')}`}
+                    >
+                      <div className="truncate font-bold">{todo.title}</div>
+                      <div className="text-xs">{todo.assignees.join(', ')}</div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </section>
 
