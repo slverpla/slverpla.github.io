@@ -7,7 +7,7 @@ import {
   TrendingUp,
   User,
 } from 'lucide-react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   Area,
   AreaChart,
@@ -48,10 +48,10 @@ const todos = [
     assignees: ['Seba'],
     category: 'Development',
     completed: false,
-    date: 'Mar-Apr',
+    date: 'Mar-May',
   },
   {
-    id: 11,
+    id: 3,
     title: 'Add PlantStore users',
     assignees: ['Seba'],
     category: 'Development',
@@ -59,7 +59,23 @@ const todos = [
     date: 'Feb-Apr',
   },
   {
-    id: 10,
+    id: 4,
+    title: 'Turn on swiping + matching (first we need more sellers)',
+    assignees: ['Seba'],
+    category: 'Development',
+    completed: false,
+    date: 'Apr-Jul',
+  },
+  {
+    id: 5,
+    title: 'Implement reviews and ratings',
+    assignees: ['Seba'],
+    category: 'Development',
+    completed: false,
+    date: 'May-Aug',
+  },
+  {
+    id: 6,
     title: 'Final bug fixes and improvements',
     assignees: ['Seba'],
     category: 'Development',
@@ -67,7 +83,25 @@ const todos = [
     date: 'Feb-Apr',
   },
   {
-    id: 3,
+    id: 7,
+    title: 'Start non-profit and set up legal structure',
+    assignees: ['Seba'],
+    category: 'Legal',
+    completed: false,
+    description:
+      'We zouden directors zijn, app zit bij mij en lenen we uit en kunnen onszelf max 1.5k per jaar uit keren, maar geven vooral aan goede doelen en herinvesteren in ons bedrijf.',
+    date: 'Jan-Feb',
+  },
+  {
+    id: 8,
+    title: 'Complete website',
+    assignees: ['Nele'],
+    category: 'Development',
+    completed: false,
+    date: 'Jan-Feb',
+  },
+  {
+    id: 9,
     title: 'Test and find final bugs',
     assignees: ['Seba', 'Maarten', 'Nele'],
     category: 'QA',
@@ -76,25 +110,17 @@ const todos = [
     date: 'Jan-Feb',
   },
   {
-    id: 9,
+    id: 10,
     title: 'Plant stores sales pitch',
     assignees: ['Maarten', 'Seba', 'Nele'],
     category: 'Sales',
     completed: false,
     description:
       'Naar plant winkels gaan en zeggen dat we normaal 300 per jaar vragen, maar omdat we nog niet veel gebruikers hebben jullie levenslang 100 euro per jaar mogen betalen en we doen de eerste marketing setup.',
-    date: 'Apr-Dec',
+    date: 'Mar-Dec',
   },
   {
-    id: 4,
-    title: 'Complete website',
-    assignees: ['Nele'],
-    category: 'Development',
-    completed: false,
-    date: 'Jan-Feb',
-  },
-  {
-    id: 6,
+    id: 11,
     title: 'Finish flyers',
     assignees: ['Maarten'],
     category: 'Marketing',
@@ -102,30 +128,28 @@ const todos = [
     date: 'Jan-Feb',
   },
   {
-    id: 5,
-    title: 'Start non-profit',
-    assignees: ['Maarten'],
-    category: 'Legal',
-    completed: false,
-    description:
-      'We zouden directors zijn, app zit bij mij en lenen we uit en kunnen onszelf max 1.5k per jaar uit keren, maar geven vooral aan goede doelen en herinvesteren in ons bedrijf.',
-    date: 'Jan-Feb',
-  },
-  {
-    id: 7,
+    id: 12,
     title: 'Contact people in Facebook groups',
     assignees: ['Maarten'],
     category: 'Marketing',
     completed: false,
-    date: 'Mar-Dec',
+    date: 'Feb-Dec',
   },
   {
-    id: 8,
+    id: 13,
     title: 'Go flyering on plant events',
     assignees: ['Maarten'],
     category: 'Marketing',
     completed: false,
     date: 'Mar-Dec',
+  },
+  {
+    id: 14,
+    title: 'Create social media presence',
+    assignees: ['Maarten'],
+    category: 'Marketing',
+    completed: false,
+    date: 'Jan-Dec',
   },
 ];
 
@@ -226,63 +250,71 @@ export default function App() {
           </div>
 
           <div className="h-[400px] w-full">
-            <ResponsiveContainer width="100%" height="100%">
-              <AreaChart
-                data={data}
-                margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
-              >
-                <defs>
-                  <linearGradient id="colorUsers" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.1} />
-                    <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
-                  </linearGradient>
-                  <linearGradient id="colorProfit" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="5%" stopColor="#10b981" stopOpacity={0.1} />
-                    <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
-                  </linearGradient>
-                </defs>
-                <CartesianGrid
-                  strokeDasharray="3 3"
-                  vertical={false}
-                  stroke="#f3f4f6"
-                />
-                <XAxis
-                  dataKey="name"
-                  axisLine={false}
-                  tickLine={false}
-                  tick={{ fill: '#9ca3af', fontSize: 12 }}
-                  dy={10}
-                />
-                <YAxis
-                  axisLine={false}
-                  tickLine={false}
-                  tick={{ fill: '#9ca3af', fontSize: 12 }}
-                />
-                <Tooltip
-                  contentStyle={{
-                    borderRadius: '8px',
-                    border: 'none',
-                    boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
-                  }}
-                />
-                <Area
-                  type="monotone"
-                  dataKey="users"
-                  stroke="#3b82f6"
-                  strokeWidth={3}
-                  fillOpacity={1}
-                  fill="url(#colorUsers)"
-                />
-                <Area
-                  type="monotone"
-                  dataKey="profit"
-                  stroke="#10b981"
-                  strokeWidth={3}
-                  fillOpacity={1}
-                  fill="url(#colorProfit)"
-                />
-              </AreaChart>
-            </ResponsiveContainer>
+            <div className="h-[400px] w-full" style={{ minHeight: '400px' }}>
+              <ResponsiveContainer width="100%" height="100%" minHeight={400}>
+                <AreaChart
+                  data={data}
+                  margin={{ top: 10, right: 10, left: 0, bottom: 0 }}
+                >
+                  <defs>
+                    <linearGradient id="colorUsers" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#3b82f6" stopOpacity={0.1} />
+                      <stop offset="95%" stopColor="#3b82f6" stopOpacity={0} />
+                    </linearGradient>
+                    <linearGradient
+                      id="colorProfit"
+                      x1="0"
+                      y1="0"
+                      x2="0"
+                      y2="1"
+                    >
+                      <stop offset="5%" stopColor="#10b981" stopOpacity={0.1} />
+                      <stop offset="95%" stopColor="#10b981" stopOpacity={0} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid
+                    strokeDasharray="3 3"
+                    vertical={false}
+                    stroke="#f3f4f6"
+                  />
+                  <XAxis
+                    dataKey="name"
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                    dy={10}
+                  />
+                  <YAxis
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: '#9ca3af', fontSize: 12 }}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      borderRadius: '8px',
+                      border: 'none',
+                      boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.1)',
+                    }}
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="users"
+                    stroke="#3b82f6"
+                    strokeWidth={3}
+                    fillOpacity={1}
+                    fill="url(#colorUsers)"
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="profit"
+                    stroke="#10b981"
+                    strokeWidth={3}
+                    fillOpacity={1}
+                    fill="url(#colorProfit)"
+                  />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
           </div>
           <div className="mt-8">
             <div className="grid grid-cols-12">
