@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import type { ReactNode } from 'react';
-import React from 'react';
 
 type IButtonProps = {
   size?: 'sm' | 'md' | 'lg';

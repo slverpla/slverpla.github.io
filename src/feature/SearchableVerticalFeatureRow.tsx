@@ -1,6 +1,6 @@
 import className from 'classnames';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { Button } from '@/button/Button';
 import type { Language } from '@/utils/translations';
