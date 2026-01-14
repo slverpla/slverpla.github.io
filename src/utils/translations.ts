@@ -2,7 +2,7 @@ export const translations = {
   en: {
     seo: {
       home: {
-        title: 'Plantative: Trade, Share, and Discover New Plants',
+        title: 'Plantative: Trade, share and care for plants with ease.',
         description:
           'Join the Plantative community to trade, sell, and share plants and cuttings with fellow enthusiasts. Discover new species and grow your collection with ease.',
       },
@@ -161,7 +161,7 @@ export const translations = {
   nl: {
     seo: {
       home: {
-        title: 'Plantative: Ruil, Deel en Ontdek Nieuwe Planten',
+        title: 'Plantative: Ruil, deel en zorg voor planten met gemak.',
         description:
           'Word lid van de Plantative-community om planten en stekjes te ruilen, verkopen en delen met andere liefhebbers. Ontdek nieuwe soorten en breid je collectie uit.',
       },
