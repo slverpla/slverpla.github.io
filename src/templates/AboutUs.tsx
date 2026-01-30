@@ -24,9 +24,12 @@ const AboutUs = () => (
         </p>
 
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Our original team of five tech lovers planted the seeds for what you
+          Our original team of five tech geniuses planted the seeds for what you
           see today. While life took some of our founding members in different
-          directions, we&apos;re very grateful for their help.
+          directions, we&apos;re very grateful for their help. Now its just 2
+          brothers which grew up in nature and some help from a mom with way too
+          much plant knowledge. We&apos;re dedicated to making Plantative the
+          best it can be for plant lovers everywhere.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
