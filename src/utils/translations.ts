@@ -22,7 +22,7 @@ export const translations = {
           'Explore the Plantative marketplace to find a wide variety of plants, from common houseplants to rare species. List your own plants for sale or trade with others.',
       },
       plantDoctor: {
-        title: 'Plantative Doctor | Expert Plant Care Advice',
+        title: 'Plant Doctor | Expert Plant Care Advice',
         description:
           'Got a sick plant? Use the Plantative Doctor to diagnose issues, get treatment recommendations, and receive personalized care tips from plant experts.',
       },
@@ -86,9 +86,6 @@ export const translations = {
         searchLabel: 'Search',
         searchButton: 'Search',
       },
-    },
-    plantativeDoctor: {
-      title: 'Plantative Doctor',
     },
     marketplace: {
       securityCheck:
@@ -181,7 +178,7 @@ export const translations = {
           'Verken de Plantative-marktplaats om een breed scala aan planten te vinden, van gewone kamerplanten tot zeldzame soorten. Bied je eigen planten te koop aan of ruil met anderen.',
       },
       plantDoctor: {
-        title: 'Plantative Dokter | Deskundig Plantenadvies',
+        title: 'Plant Dokter | Deskundig Plantenadvies',
         description:
           'Heb je een zieke plant? Gebruik de Plantative Dokter om problemen te diagnosticeren, behandeladvies te krijgen en gepersonaliseerde verzorgingstips van plantenexperts te ontvangen.',
       },
@@ -245,9 +242,6 @@ export const translations = {
         searchLabel: 'Zoek',
         searchButton: 'Zoek',
       },
-    },
-    plantativeDoctor: {
-      title: 'Plantative Dokter',
     },
     marketplace: {
       securityCheck:
