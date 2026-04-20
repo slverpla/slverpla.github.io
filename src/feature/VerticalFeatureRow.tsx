@@ -1,6 +1,5 @@
 import className from 'classnames';
 import { useRouter } from 'next/router';
-import React from 'react';
 
 import { Button } from '@/button/Button';
 import type { Language } from '@/utils/translations';
@@ -14,6 +13,7 @@ type IVerticalFeatureRowProps = {
   reverse?: boolean;
   isClickable?: boolean;
   onClick?: () => void;
+  href?: string;
   removeMarginTop?: boolean;
   language: Language;
 };
@@ -30,83 +30,64 @@ const VerticalFeatureRow = (props: IVerticalFeatureRowProps) => {
   );
 
   const router = useRouter();
+  const tryNowHref = `${props.language === 'en' ? '' : '/nl'}/get-plantative/`;
 
-  const handleInteraction = () => {
-    if (props.onClick) {
-      props.onClick();
-    }
-  };
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
-    if (e.key === 'Enter' || e.key === ' ') {
-      handleInteraction();
-    }
-  };
+  const imageContent = (
+    <img
+      src={`${router.basePath}${props.image}`}
+      alt={props.imageAlt}
+      className="h-auto w-full"
+      style={{
+        maskImage:
+          'radial-gradient(circle at center, black 60%, transparent 65%)',
+        WebkitMaskImage:
+          'radial-gradient(circle at center, black 60%, transparent 65%)',
+      }}
+    />
+  );
 
   return (
     <div className={verticalFeatureClass}>
       <div className="w-full text-center sm:w-1/2 sm:px-6">
-        <h2
-          className={`text-3xl font-semibold text-gray-900`}
-          onClick={handleInteraction}
-          onKeyDown={handleKeyDown}
-          role={props.onClick ? 'button' : undefined}
-          tabIndex={props.onClick ? 0 : -1}
-        >
-          {props.title}
+        <h2 className={`text-3xl font-semibold text-gray-900`}>
+          {props.href ? (
+            <a href={props.href} className="hover:underline">
+              {props.title}
+            </a>
+          ) : (
+            props.title
+          )}
         </h2>
         <div
           className={`mt-5 text-base leading-7 md:mt-6 md:text-xl md:leading-9`}
-          onClick={handleInteraction}
-          onKeyDown={handleKeyDown}
-          role={props.onClick ? 'button' : undefined}
-          tabIndex={props.onClick ? 0 : -1}
         >
           {props.description}
         </div>
         <div className="mt-6 flex justify-center gap-4">
-          {props.onClick && (
-            <Button onClick={props.onClick}>
+          {(props.href || props.onClick) && (
+            <Button
+              href={props.href}
+              onClick={props.href ? undefined : props.onClick}
+            >
               {translations[props.language].features.buttons.moreInfo}
             </Button>
           )}
-          <Button
-            onClick={() => {
-              router.push(
-                `${props.language === 'en' ? '' : '/nl'}/get-plantative/`,
-              );
-            }}
-            outline
-          >
+          <Button href={tryNowHref} outline>
             {translations[props.language].features.buttons.tryNow}
           </Button>
         </div>
       </div>
 
       <div className="w-full p-6 sm:w-1/2">
-        <div
-          className="group relative"
-          onClick={handleInteraction}
-          onKeyDown={handleKeyDown}
-          role={props.onClick ? 'button' : undefined}
-          tabIndex={props.onClick ? 0 : -1}
-        >
+        <div className="group relative">
           <div
-            className={`mx-auto max-w-sm ${
-              props.onClick ? 'cursor-pointer' : ''
-            }`}
+            className={`mx-auto max-w-sm ${props.href ? 'cursor-pointer' : ''}`}
           >
-            <img
-              src={`${router.basePath}${props.image}`}
-              alt={props.imageAlt}
-              className="h-auto w-full"
-              style={{
-                maskImage:
-                  'radial-gradient(circle at center, black 60%, transparent 65%)',
-                WebkitMaskImage:
-                  'radial-gradient(circle at center, black 60%, transparent 65%)',
-              }}
-            />
+            {props.href ? (
+              <a href={props.href}>{imageContent}</a>
+            ) : (
+              imageContent
+            )}
           </div>
         </div>
       </div>

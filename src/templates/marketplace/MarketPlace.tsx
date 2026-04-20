@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 import AuthModal from '@/auth/AuthModal';
@@ -25,7 +24,6 @@ const Marketplace = ({
   category,
 }: MarketplaceProps) => {
   const t = translations[language];
-  const router = useRouter();
   const [plants, setPlants] = useState<Plant[]>([]);
   const [loading, setLoading] = useState(true);
   const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
@@ -76,12 +74,7 @@ const Marketplace = ({
           )}
           <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-3 md:gap-6 lg:grid-cols-4">
             {plants.map((plant) => (
-              <PlantCard
-                key={plant.id}
-                plant={plant}
-                language={language}
-                router={router}
-              />
+              <PlantCard key={plant.id} plant={plant} language={language} />
             ))}
           </div>
         </Section>

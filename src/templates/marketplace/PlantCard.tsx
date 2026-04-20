@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import { getOptimizedImageUrl, ImageSize } from '@/utils/imageOptimizer';
@@ -15,11 +16,9 @@ interface Plant {
 const PlantCard = ({
   plant,
   language,
-  router,
 }: {
   plant: Plant;
   language: Language;
-  router: any;
 }) => {
   const [optimizedUrl, setOptimizedUrl] = useState<string>(
     // Transparent placeholder
@@ -55,22 +54,16 @@ const PlantCard = ({
     };
   }, [plant.thumbnailUrl, imageError]);
 
-  const handleCardClick = () => {
-    const basePath = language === 'en' ? '' : '/nl/';
-    router.push(`${basePath}/get-plantative`);
-  };
+  const cardHref = `${language === 'en' ? '' : '/nl'}/get-plantative`;
 
   const finalImageUrl = imageError
     ? `https://placehold.co/600x400/e2e8f0/e2e8f0?text=Image`
     : optimizedUrl;
 
   return (
-    <div
+    <Link
+      href={cardHref}
       className="min-w-56 max-w-60 cursor-pointer rounded-lg bg-white shadow-md transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg"
-      onClick={handleCardClick}
-      onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
-      role="button"
-      tabIndex={0}
     >
       <div className="relative h-48 overflow-hidden rounded-t-lg">
         <Image
@@ -112,7 +105,7 @@ const PlantCard = ({
             : ''}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
 
