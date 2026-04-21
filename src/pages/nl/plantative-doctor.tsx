@@ -11,6 +11,7 @@ const PlantativeDoctorPage = () => {
       <Meta
         title={t.seo.plantDoctor.title}
         description={t.seo.plantDoctor.description}
+        canonical="https://plantative.com/nl/plantative-doctor/"
       />
       <Header language="nl" />
       <PlantativeDoctorNL />

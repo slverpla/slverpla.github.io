@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://plantative.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/plantative-doctor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/plantative-doctor/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/plantative-doctor/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/marketplace/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/get-plantative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/get-plantative/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/get-plantative/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/about/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/terms/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/privacy-policy/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/"/>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/plantative-doctor/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/plantative-doctor/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/plantative-doctor/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/marketplace/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/marketplace/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/marketplace/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/get-plantative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/get-plantative/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/get-plantative/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/about/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/about/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/about/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/terms/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/privacy-policy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/privacy-policy/"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

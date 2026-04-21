@@ -8,7 +8,11 @@ const TermsOfServicePage = () => {
   const t = translations.en;
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={t.seo.terms.title} description={t.seo.terms.description} />
+      <Meta
+        title={t.seo.terms.title}
+        description={t.seo.terms.description}
+        canonical="https://plantative.com/terms/"
+      />
       <Header />
       <TermsOfService />
       <Footer />

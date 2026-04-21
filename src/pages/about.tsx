@@ -8,7 +8,11 @@ const AboutUsPage = () => {
   const t = translations.en;
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={t.seo.about.title} description={t.seo.about.description} />
+      <Meta
+        title={t.seo.about.title}
+        description={t.seo.about.description}
+        canonical="https://plantative.com/about/"
+      />
       <Header />
       <AboutUs />
       <Footer />

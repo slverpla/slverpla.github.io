@@ -11,6 +11,7 @@ const PrivacyPolicyPageNL = () => {
       <Meta
         title={t.seo.privacy.title}
         description={t.seo.privacy.description}
+        canonical="https://plantative.com/nl/privacy-policy/"
       />
       <Header language="nl" />
       <PrivacyPolicyNL />

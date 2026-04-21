@@ -11,6 +11,7 @@ const PrivacyPolicyPage = () => {
       <Meta
         title={t.seo.privacy.title}
         description={t.seo.privacy.description}
+        canonical="https://plantative.com/privacy-policy/"
       />
       <Header />
       <PrivacyPolicy />

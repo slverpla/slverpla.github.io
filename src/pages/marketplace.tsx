@@ -21,6 +21,7 @@ const SearchPage = () => {
       <Meta
         title={t.seo.marketplace.title}
         description={t.seo.marketplace.description}
+        canonical="https://plantative.com/marketplace/"
       />
       <Header />
       {isVerified ? (

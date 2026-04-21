@@ -24,7 +24,11 @@ const Index = () => {
 
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={t.seo.home.title} description={t.seo.home.description} />
+      <Meta
+        title={t.seo.home.title}
+        description={t.seo.home.description}
+        canonical="https://plantative.com/"
+      />
       <AnimatePresence>
         {showToast && (
           <Toast

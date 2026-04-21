@@ -44,7 +44,11 @@ const GetTheAppNL = () => {
 
   return (
     <div className="text-gray-600 antialiased">
-      <Meta title={t.seo.getApp.title} description={t.seo.getApp.description} />
+      <Meta
+        title={t.seo.getApp.title}
+        description={t.seo.getApp.description}
+        canonical="https://plantative.com/nl/get-plantative/"
+      />
       <GetAppHeader language="nl" />
       <DownloadSection language="nl" />
       <Footer language="nl" />
