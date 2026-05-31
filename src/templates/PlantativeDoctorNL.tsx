@@ -42,7 +42,7 @@ const PlantativeDoctorNL = () => (
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
           Wat maakt Plantative Doctor anders? Je kunt er elke dag mee
-          overleggen. Of je ficus benjamina er nu wat slap bij hangt of je
+          overleggen. Of je Ficus Benjamina er nu wat slap bij hangt of je
           tomaten gele vlekken krijgen, je kunt een gesprek voeren over wat er
           aan de hand is en persoonlijk advies krijgen. Het is alsof je een
           plantenexpert beschikbaar hebt wanneer je die nodig hebt, klaar om je
@@ -54,13 +54,12 @@ const PlantativeDoctorNL = () => (
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
           Plantative Doctor heeft geleerd van miljoenen
-          plantenverzorging-bronnen zoals boeken, websites, onderzoekspapers,
+          plantenverzorgingsbronnen zoals boeken, websites, onderzoekspapers,
           noem maar op. In onze tests geeft het in 96,73% van de gevallen het
-          juiste antwoord op plantenverzorging-vragen. Maar hier is het punt: we
-          weten dat AI niet perfect is, en wij ook niet. Daarom geeft Plantative
-          Doctor je niet zomaar antwoorden, het helpt je om ze te controleren en
-          aanvullende bronnen te vinden zodat je je zeker kunt voelen over je
-          plantenverzorging-beslissingen.
+          juiste antwoord op vragen. Maar hier is het punt: we weten dat AI niet
+          perfect is, en wij ook niet. Daarom geeft Plantative Doctor je niet
+          zomaar antwoorden, het helpt je om ze te controleren en aanvullende
+          bronnen te vinden zodat je je zeker kunt voelen over je beslissingen.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
