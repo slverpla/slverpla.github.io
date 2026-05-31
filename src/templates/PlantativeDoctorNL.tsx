@@ -87,7 +87,7 @@ const PlantativedokterNL = () => (
           Het beste deel? Je krijgt niet zomaar generiek advies uit een
           verzorgingsgids. Je krijgt ondersteuning die zich aanpast aan jouw
           echte situatie, of je nu te maken hebt met weinig licht, te veel regen
-          of je gewoon probeert je eerste kamerplant in leven te houden.
+          of je gewoon je eerste kamerplant in leven probeert tehouden.
         </p>
 
         {/* Call to action */}
