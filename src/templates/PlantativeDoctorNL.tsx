@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 import { Button } from '@/button/Button';
 
-const PlantativeDoctorNL = () => (
+const PlantativedokterNL = () => (
   <>
     {/* Header section with image */}
     <div className="-mt-20 flex flex-wrap items-center justify-center">
       <div className="w-full p-4 sm:w-1/2">
         <div className="mx-auto max-w-sm">
           <img
-            src="/assets/images/doctor_edited.webp"
+            src="/assets/images/dokter_edited.webp"
             alt="Plant care expert consultation illustration"
             className="h-auto w-full"
             style={{
@@ -32,7 +32,7 @@ const PlantativeDoctorNL = () => (
       <div className="prose prose-lg max-w-none">
         <p className="mb-8 text-xl leading-8 text-gray-700">
           Elke plant is uniek, en dat geldt ook voor elk huis, en elke tuin. Dat
-          is de gedachte achter Plantative Doctor, een slimme
+          is de gedachte achter Plantative dokter, een slimme
           plantenverzorgingsassistent die begrijpt dat er geen one-size-fits-all
           aanpak is om je groene vrienden gelukkig te houden.
         </p>
@@ -41,7 +41,7 @@ const PlantativeDoctorNL = () => (
           Je dagelijkse opvolger
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Wat maakt Plantative Doctor anders? Je kunt er elke dag mee
+          Wat maakt Plantative dokter anders? Je kunt er elke dag mee
           overleggen. Of je Ficus Benjamina er nu wat slap bij hangt of je
           tomaten gele vlekken krijgen, je kunt een gesprek voeren over wat er
           aan de hand is en persoonlijk advies krijgen. Het is alsof je een
@@ -53,11 +53,11 @@ const PlantativeDoctorNL = () => (
           Slim, maar niet perfect
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Plantative Doctor heeft geleerd van miljoenen
+          Plantative dokter heeft geleerd van miljoenen
           plantenverzorgingsbronnen zoals boeken, websites, onderzoekspapers,
           noem maar op. In onze tests geeft het in 96,73% van de gevallen het
           juiste antwoord op vragen. Maar hier is het punt: we weten dat AI niet
-          perfect is, en wij ook niet. Daarom geeft Plantative Doctor je niet
+          perfect is, en wij ook niet. Daarom geeft Plantative dokter je niet
           zomaar antwoorden, het helpt je om ze te controleren en aanvullende
           bronnen te vinden zodat je je zeker kunt voelen over je beslissingen.
         </p>
@@ -73,12 +73,12 @@ const PlantativeDoctorNL = () => (
           </p>
           <p className="mb-4 text-lg leading-7 text-gray-700">
             <strong>Gezondheidsproblemen Oplossen:</strong> Gele blaadjes of
-            rare vlekken ontdekt? De doctor kan helpen identificeren wat er mis
-            is en je door de stappen leiden om het op te lossen.
+            vreemde vlekken ontdekt? De dokter kan je helpen identificeren wat
+            er mis is en je door de stappen leiden om het op te lossen.
           </p>
           <p className="mb-4 text-lg leading-7 text-gray-700">
-            <strong>Slimme Planning:</strong> Laat de doctor je helpen met het
-            instellen van water-herinneringen en verzorgingsschema&apos;s die
+            <strong>Slimme Planning:</strong> Laat de dokter je helpen met het
+            instellen van water herinneringen en verzorgingsschema&apos;s die
             echt passen bij jouw specifieke planten en levensstijl.
           </p>
         </div>
@@ -101,4 +101,4 @@ const PlantativeDoctorNL = () => (
   </>
 );
 
-export default PlantativeDoctorNL;
+export default PlantativedokterNL;
