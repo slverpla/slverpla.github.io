@@ -24,6 +24,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/search_plants.webp"
             imageAlt="Illustration of people trading plants"
             removeMarginTop
+            href={`${language === 'en' ? '' : '/nl'}/buy-plants/`}
             language={language}
           />
         </ScrollFadeInSection>
@@ -34,6 +35,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/buying_and_selling_blur_bg.webp"
             imageAlt="Plant identification through camera illustration"
             reverse
+            href={`${language === 'en' ? '' : '/nl'}/sell-plants/`}
             language={language}
           />
         </ScrollFadeInSection>
@@ -54,6 +56,7 @@ const VerticalFeatures = ({ language = 'en' }: VerticalFeaturesProps) => {
             image="/assets/images/watering_reminders.webp"
             imageAlt="Plant care reminders illustration"
             reverse
+            href={`${language === 'en' ? '' : '/nl'}/plantative-doctor/`}
             language={language}
           />
         </ScrollFadeInSection>

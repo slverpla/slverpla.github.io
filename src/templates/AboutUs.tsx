@@ -1,81 +1,88 @@
+import Link from 'next/link';
+
+import { AppConfig } from '@/utils/AppConfig';
+
 const AboutUs = () => (
   <>
     {/* Main content */}
     <div className="mx-auto max-w-4xl px-6 py-12">
       <div className="prose prose-lg max-w-none">
-        <h1 className="mb-8 text-3xl font-bold text-gray-900">About Us</h1>
+        <h1 className="mb-8 text-3xl font-bold text-gray-900">About us</h1>
 
         <p className="mb-8  text-lg leading-7 text-gray-700">
-          It started with a simple idea: sharing plants and plant knowledge
-          should be free and accessible to everyone. What began as some
-          late-night chats among friends about how plant lovers deserved better
-          has grown into something much bigger, a community-driven platform
-          that&apos;s making the world a bit greener every day.
+          Plantative started with two problems we had ourselves: our plants kept
+          dying, and the plants we actually wanted were hard to find. We figured
+          we weren&apos;t the only ones. So we built an app that helps with
+          both, with care advice and reminders for the plants you already have,
+          and a place to find new ones from people near you.
         </p>
 
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          There are plenty of plant apps out there, but we felt the plant
-          community needed something different. We think plant knowledge and
-          communities shouldn&apos;t cost money. Our main features will always
-          stay free because that&apos;s how real communities grow. Any money we
-          make from our basic premium plan that we don&apos;t need to keep the
-          app running will go straight to help the environment and plant trees.
-          When you use Plantative, you&apos;re helping the planet.
-        </p>
-
-        <p className="mb-8 text-lg leading-7 text-gray-700">
-          Our original team of five tech geniuses planted the seeds for what you
-          see today. While life took some of our founding members in different
-          directions, we&apos;re very grateful for their help. Now its just 2
-          brothers which grew up in nature and some help from a mom with way too
-          much plant knowledge. We&apos;re dedicated to making Plantative the
-          best it can be for plant lovers everywhere.
+          We&apos;re Sebastiaan and Maarten, two brothers who grew up in nature
+          and now live in Ghent. The idea came up during late-night chats with
+          friends, and five of us built the first version together. Life has
+          since taken the others in different directions, and we&apos;re
+          grateful for everything they did. Today it&apos;s the two of us, with
+          help from our mom, who knows way too much about plants. She&apos;s one
+          of the two people behind{' '}
+          <Link href="https://www.tuinvolleven.be/" className="underline">
+            Tuin Vol Leven
+          </Link>
+          , which designs and maintains biodiverse gardens.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
-          About the tech we use
+          Our promise
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Yes, we used AI to help build this app, but all the code was written
-          by real people; this isn&apos;t some quick vibe coded app. With all
-          the recent security problems happening online, we made sure that
-          humans handle the security layer. This means your messages, photos,
-          and private info stay between you and who you choose to share with.
-        </p>
-
-        <p className="mb-8 text-lg leading-7 text-gray-700">
-          We use AI to help identify plants and give care tips, but we built it
-          to amplify human knowledge, not replace it. AI is great at finding the
-          right info for you, but it can sometimes get things wrong or miss
-          something important in your plants environment. If that happens, just
-          let our support team know. We won&apos;t use your feedback to train AI
-          right away, but after our team reviews it, we might use it to make
-          better recommendations. The best plant advice will always come from
-          people who&apos;ve actually grown the plants. That&apos;s why we need
-          your help!
+          We think sharing plants and plant knowledge shouldn&apos;t cost money,
+          so the main features of Plantative will always stay free. There is
+          also a basic premium plan. Whatever it earns beyond what we need to
+          keep the app running goes to the environment and to planting trees.
+          You can follow where the money goes on{' '}
+          <Link href={AppConfig.instagramUrl} className="underline">
+            our Instagram
+          </Link>
+          .
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
-          Join our mission
+          How we use AI
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          We&apos;re looking for passionate people to join us on this journey.
-          If you&apos;re a master gardener, or just someone who believes in what
-          we&apos;re building, there&apos;s a place for you here. Whether it is
-          to help us spread the word, improve the app, or connect with fellow
-          plant lovers, we&apos;d love to have you on the team.
+          Yes, we used AI while building Plantative, but we wrote the code
+          ourselves. This isn&apos;t a quick vibe-coded app. We handled the
+          security ourselves too, so your messages, photos and private info stay
+          between you and the people you choose to share them with.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          In the app, AI helps identify plants and give care tips. It sometimes
+          gets things wrong or misses something about where your plant is
+          growing. If that happens, tell us. We read that feedback ourselves
+          before we use it to improve the advice.
         </p>
 
-        <p className="mb-12 text-lg leading-7 text-gray-700">
-          Download the app and join a community that makes plant sharing easy,
-          keeps knowledge free, and helps make the world greener. The best
-          things in life (like plants) grow better when we share them.
+        <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
+          What we&apos;re building
+        </h2>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          The best plant advice comes from people who have grown the plants
+          themselves. We want Plantative to become a community full of that kind
+          of knowledge, where people with years of experience help the ones who
+          are just starting, and where a cutting from your windowsill ends up
+          with someone who has been looking for it.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          That only works if people join in. Download the app, swap a plant and
+          share what you know. The best things in life (like plants) grow better
+          when we share them.
         </p>
 
-        <div className="mt-8 text-center">
-          <p className="text-sm italic text-gray-600">
-            Questions? Ideas? Want to help out? Email us at plantative@gmail.com
-            or message support in the app.
+        <div className="mt-12 text-center">
+          <p className="text-lg text-gray-700">Sebastiaan &amp; Maarten</p>
+          <p className="mt-4 text-sm italic text-gray-600">
+            Questions or ideas? Email us at plantative@gmail.com or send a
+            message to support in the app. One of us will answer.
           </p>
         </div>
       </div>

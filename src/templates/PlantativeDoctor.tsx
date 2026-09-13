@@ -31,68 +31,56 @@ const PlantativeDoctor = () => (
     <div className="mx-auto max-w-4xl px-6 py-12">
       <div className="prose prose-lg max-w-none">
         <p className="mb-8 text-xl leading-8 text-gray-700">
-          Every plant is unique, and so is every home, garden, and growing
-          situation. That&apos;s the thinking behind Plantative Doctor, a smart
-          plant care assistant that understands there&apos;s no
-          one-size-fits-all approach to keeping your green friends happy.
+          Every plant is different, and so is every home and garden. Plantative
+          Doctor is a plant care assistant built around that: it gives advice
+          for your plant in your situation.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
-          Your daily plant care partner
+          Check in whenever you like
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          What makes Plantative Doctor different? You can check in with it every
-          day. Whether your fiddle leaf fig is looking droopy or your tomatoes
-          are getting yellow spots, you can have a conversation about
-          what&apos;s happening and get personalized advice. It&apos;s like
-          having a plant expert available whenever you need one, ready to help
-          you adjust your care routine as things change.
+          You can talk to Plantative Doctor every day. If your fiddle leaf fig
+          starts to droop or your tomatoes get yellow spots, describe what you
+          see and you&apos;ll get advice for that plant. When things change, it
+          helps you adjust your care routine.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
           Smart, but not perfect
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          Plantative Doctor has learned from millions of plant care resources
-          like books, websites, research papers, you name it... In our testing,
-          it gets plant care questions right 96.73% of the time. But here&apos;s
-          the thing: we know AI isn&apos;t perfect, and neither are we.
-          That&apos;s why Plantative Doctor doesn&apos;t just give you answers,
-          it helps you double-check them and find additional resources so you
-          can feel confident about your plant care decisions.
+          Plantative Doctor learned from millions of plant care sources,
+          including books, websites and research papers. In our testing, it
+          answered plant care questions correctly about 97% of the time. AI
+          still makes mistakes, and so do we, so Plantative Doctor also helps
+          you double-check its answers and points you to other sources.
         </p>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
           What can it help you with?
         </h2>
-        <div className="prose prose-lg max-w-none">
-          <p className="mb-4 text-lg leading-7 text-gray-700">
-            <strong>Plant Recognition:</strong> Not sure what that plant is
-            called? Snap a photo and get an instant identification, plus all the
-            care information you need to keep it thriving.
-          </p>
-          <p className="mb-4 text-lg leading-7 text-gray-700">
-            <strong>Health Troubleshooter:</strong> Spotted some yellowing
-            leaves or weird spots? The doctor can help identify what&apos;s
-            wrong and guide you through the steps to fix it.
-          </p>
-          <p className="mb-4 text-lg leading-7 text-gray-700">
-            <strong>Smart Scheduling:</strong> Let the doctor help you to set up
-            watering reminders and care schedules that actually make sense for
-            your specific plants and lifestyle.
-          </p>
-        </div>
-
         <p className="mb-8 text-lg leading-7 text-gray-700">
-          The best part? You&apos;re not just getting generic advice from a care
-          guide. You&apos;re getting support that adapts to your real situation,
-          whether you&apos;re dealing with low light, hard water, or just trying
-          to keep your first houseplant alive.
+          Not sure what a plant is called? Take a photo and you&apos;ll get its
+          name straight away, along with the care information that goes with it.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          If you spot yellowing leaves or strange spots, the doctor helps you
+          work out what&apos;s wrong and walks you through fixing it.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          It can also set up watering reminders and a care schedule that fit
+          your plants and your routine.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          Care guides give the same advice to everyone. Plantative Doctor
+          adjusts to your situation, whether you&apos;re dealing with low light
+          or hard water, or just trying to keep your first houseplant alive.
         </p>
 
         {/* Call to action */}
         <div className="mt-16 text-center">
-          <Link href={`/get-plantative`}>
+          <Link href="/get-plantative/">
             <Button size="lg">{'Try Plantative Doctor'}</Button>
           </Link>
         </div>

@@ -14,6 +14,7 @@ type ISearchableVerticalFeatureRowProps = {
   language: Language;
   reverse?: boolean;
   removeMarginTop?: boolean;
+  href?: string;
 };
 
 const SearchableVerticalFeatureRow = (
@@ -102,7 +103,12 @@ const SearchableVerticalFeatureRow = (
               )}
             </div>
 
-            <div className="mt-6">
+            <div className="mt-6 flex justify-center gap-4">
+              {props.href && (
+                <Button size="md" href={props.href}>
+                  {translations[props.language].features.buttons.moreInfo}
+                </Button>
+              )}
               <Button outline size="md" onClick={handleSearch}>
                 {translations[props.language].features.search.searchButton}
               </Button>

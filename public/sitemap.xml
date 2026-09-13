@@ -30,6 +30,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://plantative.com/sell-plants/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/sell-plants/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/sell-plants/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/buy-plants/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/buy-plants/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/buy-plants/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://plantative.com/about/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/about/"/>
     <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/about/"/>
@@ -77,6 +91,20 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/get-plantative/"/>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/sell-plants/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/sell-plants/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/sell-plants/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://plantative.com/nl/buy-plants/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plantative.com/buy-plants/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://plantative.com/nl/buy-plants/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://plantative.com/nl/about/</loc>

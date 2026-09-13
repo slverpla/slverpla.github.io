@@ -2,44 +2,54 @@ export const translations = {
   en: {
     seo: {
       home: {
-        title: 'Plantative: Trade, share and care for plants with ease.',
+        title: 'Plantative | Swap, sell and care for your plants',
         description:
-          'Join the Plantative community to trade, sell, and share plants and cuttings with fellow enthusiasts. Discover new species and grow your collection with ease.',
+          'Swap and sell plants and cuttings with plant lovers near you, and keep track of your own collection with care tips and watering reminders.',
       },
       about: {
-        title: 'About Plantative | Our Mission and Story',
+        title: 'About Plantative | Our story',
         description:
-          'Learn about the mission behind Plantative, the team dedicated to connecting plant lovers, and our journey in building a global green community.',
+          'Sebastiaan and Maarten, two brothers from Ghent, on why they built Plantative, what they promise and how they use AI.',
       },
       getApp: {
-        title: 'Download the Plantative App for iOS & Android',
+        title: 'Download the Plantative app for iOS and Android',
         description:
-          'Get the free Plantative app on the Apple App Store and Google Play Store. Start trading plants, getting expert advice, and setting care reminders today.',
+          'Get the free Plantative app for iPhone and Android. Swap plants, ask Plantative Doctor for advice and set watering reminders.',
       },
       marketplace: {
-        title: 'Plant Marketplace | Buy, Sell & Trade Plants Locally',
+        title: 'Plant marketplace | Buy, sell and swap plants locally',
         description:
-          'Explore the Plantative marketplace to find a wide variety of plants, from common houseplants to rare species. List your own plants for sale or trade with others.',
+          'Find houseplants, cuttings and rare species from people near you. List your own plants for sale or swap them for something new.',
       },
       plantDoctor: {
-        title: 'Plant Doctor | Expert Plant Care Advice',
+        title: 'Plantative Doctor | Advice for your plants',
         description:
-          'Got a sick plant? Use the Plantative Doctor to diagnose issues, get treatment recommendations, and receive personalized care tips from plant experts.',
+          'Sick plant? Describe the problem or send a photo to Plantative Doctor and get advice that fits your plant and your home.',
       },
       privacy: {
         title: 'Privacy Policy | Plantative',
         description:
-          'Read the official Plantative Privacy Policy to understand how we collect, use, and protect your personal data across our app and website.',
+          'How Plantative collects, uses and protects your personal data in the app and on the website.',
       },
       terms: {
         title: 'Terms of Service | Plantative',
         description:
-          'Review the Terms of Service for using the Plantative app and website. Understand your rights and responsibilities within our community.',
+          'The terms for using the Plantative app and website, including your rights and responsibilities as a user.',
       },
       notFound: {
-        title: '404: Page Not Found | Plantative',
+        title: '404: Page not found | Plantative',
         description:
-          "Oops! The page you're looking for doesn't exist. Return to the homepage to continue exploring the world of plants with Plantative.",
+          "This page doesn't exist. Go back to the Plantative homepage.",
+      },
+      sellPlants: {
+        title: 'Sell or swap your plants | Plantative',
+        description:
+          'Sell cuttings and houseplants to plant lovers near you. Tips on photos, pricing and plant health rules, plus how selling and swapping work in the Plantative app.',
+      },
+      buyPlants: {
+        title: 'Buy plants from plant lovers near you | Plantative',
+        description:
+          'Buy houseplants, garden plants, cuttings and seeds from other plant lovers. See what each plant needs before you buy, then make an offer or propose a swap.',
       },
     },
     nav: {
@@ -50,28 +60,28 @@ export const translations = {
       title1: 'Trade, share and care for plants with',
       title2: 'Plantative',
       subtitle: 'Trade plants, grow friendships. Where plant lovers unite.',
-      cta: 'Download Now For Free',
+      cta: 'Download for free',
     },
     features: {
       trading: {
-        title: 'Search the Marketplace',
+        title: 'Search the marketplace',
         description:
-          "Discover the perfect plants by searching our plant marketplace with names, care requirements, or even photos. Connect with plant enthusiasts worldwide to find exactly what you're looking for or help others discover the plants they need to grow their collection.",
+          "Search the marketplace by plant name, by care needs or with a photo. You'll see plants from people near you, and other plant lovers can find yours.",
       },
       recognition: {
         title: 'Sell your plants',
         description:
-          'Add any plant and its specifications with a simple snap of your camera. Our AI-powered recognition system helps you discover species, names and care requirements so your buyers can find the exact plant they need.',
+          "Take a photo to add a plant. The app recognises the species and fills in its name and care needs, so buyers know exactly what they're getting.",
       },
       expert: {
-        title: 'Expert Plant Care',
+        title: 'Advice for your plants',
         description:
-          "Get instant, personalized advice for your plants anytime. Whether you're dealing with diseases, watering questions, or need help identifying your plants, Plantative Doctor gives you expert guidance tailored to your specific situation.",
+          'Ask Plantative Doctor about your plants whenever you like. It helps with diseases, watering questions and identifying plants, and takes your own situation into account.',
       },
       reminders: {
-        title: 'Watering and Care Reminders',
+        title: 'Watering and care reminders',
         description:
-          'Never forget to water or fertilize your plants again. With the help of Plantative Doctor you can set custom reminders for each plant in your collection, ensuring they receive the care they need to thrive.',
+          'Set a watering or feeding reminder for each plant in your collection. Plantative Doctor can help you pick a schedule that suits the plant.',
       },
       buttons: {
         moreInfo: 'More Information',
@@ -79,7 +89,7 @@ export const translations = {
       },
       search: {
         categoryLabel: 'Category',
-        allCategories: 'All Categories',
+        allCategories: 'All categories',
         plants: 'Plants',
         cuttings: 'Cuttings',
         seeds: 'Seeds',
@@ -103,16 +113,16 @@ export const translations = {
         or: 'or',
         confirmEmail: 'Verify your email address!',
         confirmEmailSubTitle:
-          'Welcome, Plant Lover! Verify Your Email to Join Our Growing Community and Start Trading Beautiful Plants.',
+          'Welcome! Verify your email address to finish setting up your account and start swapping plants.',
         continue: 'Continue',
-        resendEmail: 'Resend Verification Email',
+        resendEmail: 'Resend verification email',
       },
       createAd: {
         title:
-          'We could not find any items for your query. Place an ad and Plantative will contact you once we find the ideal match for you.',
-        button: 'Place an ad',
+          "We couldn't find anything for your search. Place a wanted ad and we'll let you know when someone offers what you're looking for.",
+        button: 'Place a wanted ad',
         created:
-          'The ad has been created. We will contact the user once we found a match for you.',
+          "Your wanted ad is live. We'll let you know when we find a match.",
         viewInApp: 'View in app',
       },
     },
@@ -128,6 +138,8 @@ export const translations = {
       getApp: 'Get the App',
       newsletter: 'Newsletter',
       about: 'About',
+      sellPlants: 'Sell plants',
+      buyPlants: 'Buy plants',
       terms: 'Terms',
       privacyPolicy: 'Privacy Policy',
     },
@@ -158,44 +170,54 @@ export const translations = {
   nl: {
     seo: {
       home: {
-        title: 'Plantative: Ruil, deel en zorg voor planten met gemak.',
+        title: 'Plantative | Planten ruilen, verkopen en verzorgen',
         description:
-          'Word lid van de Plantative-community om planten en stekjes te ruilen, verkopen en delen met andere liefhebbers. Ontdek nieuwe soorten en breid je collectie uit.',
+          'Ruil en verkoop planten en stekjes met plantenliefhebbers in je buurt, en houd je eigen collectie bij met verzorgingstips en waterherinneringen.',
       },
       about: {
-        title: 'Over Plantative | Onze Missie en Verhaal',
+        title: 'Over Plantative | Ons verhaal',
         description:
-          'Lees meer over de missie van Plantative, het team dat plantenliefhebbers verbindt en onze reis naar een wereldwijde groene gemeenschap.',
+          'Sebastiaan en Maarten, twee broers uit Gent, over waarom ze Plantative bouwden, wat ze beloven en hoe ze AI gebruiken.',
       },
       getApp: {
-        title: 'Download de Plantative App voor iOS & Android',
+        title: 'Download de Plantative-app voor iOS en Android',
         description:
-          'Download de gratis Plantative-app in de Apple App Store en Google Play Store. Begin vandaag nog met het ruilen van planten, krijg deskundig advies en stel zorg-herinneringen in.',
+          'Download de gratis Plantative-app voor iPhone en Android. Ruil planten, vraag advies aan de Plantative Dokter en stel waterherinneringen in.',
       },
       marketplace: {
-        title: 'Plantenmarktplaats | Koop, Verkoop & Ruil Lokaal',
+        title: 'Plantenmarktplaats | Planten kopen, verkopen en ruilen',
         description:
-          'Verken de Plantative-marktplaats om een breed scala aan planten te vinden, van gewone kamerplanten tot zeldzame soorten. Bied je eigen planten te koop aan of ruil met anderen.',
+          'Vind kamerplanten, stekjes en zeldzame soorten bij mensen in je buurt. Zet je eigen planten te koop of ruil ze voor iets nieuws.',
       },
       plantDoctor: {
-        title: 'Plant Dokter | Deskundig Plantenadvies',
+        title: 'Plantative Dokter | Advies voor je planten',
         description:
-          'Heb je een zieke plant? Gebruik de Plantative Dokter om problemen te diagnosticeren, behandeladvies te krijgen en gepersonaliseerde verzorgingstips van plantenexperts te ontvangen.',
+          'Zieke plant? Beschrijf het probleem of stuur een foto naar de Plantative Dokter en krijg advies dat past bij jouw plant en jouw huis.',
       },
       privacy: {
         title: 'Privacybeleid | Plantative',
         description:
-          'Lees het officiële privacybeleid van Plantative om te begrijpen hoe we uw persoonlijke gegevens verzamelen, gebruiken en beschermen via onze app en website.',
+          'Hoe Plantative je persoonlijke gegevens verzamelt, gebruikt en beschermt in de app en op de website.',
       },
       terms: {
         title: 'Servicevoorwaarden | Plantative',
         description:
-          'Bekijk de servicevoorwaarden voor het gebruik van de Plantative-app en -website. Begrijp uw rechten en verantwoordelijkheden binnen onze gemeenschap.',
+          'De voorwaarden voor het gebruik van de Plantative-app en -website, met je rechten en plichten als gebruiker.',
       },
       notFound: {
-        title: '404: Pagina Niet Gevonden | Plantative',
+        title: '404: Pagina niet gevonden | Plantative',
         description:
-          'Oeps! De pagina die je zoekt bestaat niet. Ga terug naar de startpagina om de wereld van planten verder te verkennen met Plantative.',
+          'Deze pagina bestaat niet. Ga terug naar de startpagina van Plantative.',
+      },
+      sellPlants: {
+        title: 'Planten verkopen of ruilen | Plantative',
+        description:
+          "Verkoop stekjes en kamerplanten aan plantenliefhebbers in je buurt. Tips voor foto's, prijs en regels, en hoe verkopen en ruilen werkt in de Plantative-app.",
+      },
+      buyPlants: {
+        title: 'Planten kopen van liefhebbers in je buurt | Plantative',
+        description:
+          'Koop kamerplanten, tuinplanten, stekjes en zaden van andere plantenliefhebbers. Zie wat elke plant nodig heeft voor je koopt, en doe een bod of stel een ruil voor.',
       },
     },
     nav: {
@@ -206,28 +228,28 @@ export const translations = {
       title1: 'Ruil, deel en zorg voor planten met',
       title2: 'Plantative',
       subtitle: 'De plaats waar plantenliefhebbers samenkomen.',
-      cta: 'Download Nu Gratis',
+      cta: 'Gratis downloaden',
     },
     features: {
       trading: {
-        title: 'Zoek op de Marktplaats',
+        title: 'Zoek op de marktplaats',
         description:
-          "Ontdek de ideale planten door in onze plantenmarktplaats te zoeken op naam, verzorgingswensen of zelfs met foto's. Vind precies wat je zoekt en help andere plantenliefhebbers wereldwijd bij het uitbreiden van hun groene collectie.",
+          'Zoek in de marktplaats op plantennaam, op verzorging of met een foto. Je ziet planten van mensen uit je buurt, en andere plantenliefhebbers vinden jouw aanbod.',
       },
       recognition: {
         title: 'Verkoop je planten',
         description:
-          'Voeg elke plant en zijn specificaties toe met een simpele foto. Ons AI-gestuurd herkenningssysteem helpt je soorten, namen en verzorgingseisen te ontdekken zodat je kopers de exacte plant kunnen vinden die ze nodig hebben.',
+          'Maak een foto om een plant toe te voegen. De app herkent de soort en vult de naam en verzorgingsinfo in, zodat kopers weten wat ze krijgen.',
       },
       expert: {
-        title: 'Expert Plantenverzorging',
+        title: 'Advies voor je planten',
         description:
-          'Krijg gepersonaliseerd advies voor je planten, wanneer je maar wilt. Of je nu problemen hebt met ziektes, vragen over water geven, of hulp nodig hebt bij het identificeren van je planten, Plantative Doctor geeft je deskundig advies op maat voor jouw specifieke situatie.',
+          'Stel de Plantative Dokter vragen over je planten wanneer je wil. Je krijgt hulp bij ziektes, water geven en het herkennen van planten, afgestemd op jouw situatie.',
       },
       reminders: {
-        title: 'Water en Verzorging herinneringen',
+        title: 'Herinneringen voor water en verzorging',
         description:
-          'Vergeet nooit meer om je planten water te geven of te bemesten. Stel met Plantative Dokter aangepaste herinneringen in voor elke plant in je collectie, zodat ze de zorg krijgen die ze nodig hebben om gezond te blijven.',
+          'Stel voor elke plant in je collectie een herinnering in om water of voeding te geven. De Plantative Dokter helpt je een schema te kiezen dat bij de plant past.',
       },
       buttons: {
         moreInfo: 'Meer informatie',
@@ -235,7 +257,7 @@ export const translations = {
       },
       search: {
         categoryLabel: 'Categorie',
-        allCategories: 'Alle Categorieën',
+        allCategories: 'Alle categorieën',
         plants: 'Planten',
         cuttings: 'Stekjes',
         seeds: 'Zaden',
@@ -260,16 +282,16 @@ export const translations = {
         or: 'of',
         confirmEmail: 'Verifieer je e-mailadres!',
         confirmEmailSubTitle:
-          'Welkom, plantenliefhebber! Verifieer je e-mailadres om deel te nemen aan onze groeiende community en begin met het ruilen van prachtige planten.',
+          'Welkom! Bevestig je e-mailadres om je account af te werken en planten te beginnen ruilen.',
         continue: 'Doorgaan',
         resendEmail: 'Verzend e-mail opnieuw',
       },
       createAd: {
         title:
-          'We konden geen producten vinden voor je zoekopdracht. Plaats een zoekertje en Plantative contacteert je zodra we de beste match voor je hebben gevonden.',
+          'We vonden niets voor je zoekopdracht. Plaats een zoekertje, dan laten we je weten zodra iemand aanbiedt wat je zoekt.',
         button: 'Plaats een zoekertje',
         created:
-          'Het zoekertje is aangemaakt. We contacteren je van zodra we een goede match voor je gevonden hebben.',
+          'Je zoekertje staat online. We laten je weten zodra we een match vinden.',
         viewInApp: 'Bekijk in app',
       },
     },
@@ -285,6 +307,8 @@ export const translations = {
       getApp: 'Download de App',
       newsletter: 'Nieuwsbrief',
       about: 'Over ons',
+      sellPlants: 'Planten verkopen',
+      buyPlants: 'Planten kopen',
       terms: 'Voorwaarden',
       privacyPolicy: 'Privacybeleid',
     },
