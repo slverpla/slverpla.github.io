@@ -88,22 +88,6 @@ const Footer: React.FC<FooterProps> = ({ language = 'en' }) => {
             </li>
             <li>
               <Link
-                href={`${language === 'en' ? '' : '/nl'}/buy-plants/`}
-                className="text-sm sm:text-base md:text-xl"
-              >
-                {t.footer.buyPlants}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`${language === 'en' ? '' : '/nl'}/sell-plants/`}
-                className="text-sm sm:text-base md:text-xl"
-              >
-                {t.footer.sellPlants}
-              </Link>
-            </li>
-            <li>
-              <Link
                 href={`${language === 'en' ? '' : '/nl'}/terms/`}
                 className="text-sm sm:text-base md:text-xl"
               >

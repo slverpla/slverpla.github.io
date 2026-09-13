@@ -84,6 +84,54 @@ const SellPlants = () => (
         </ul>
 
         <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
+          What sells well, and when?
+        </h2>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          Most people buy plants in spring and early summer, when everything
+          starts growing again. Cuttings also root faster then, so it&apos;s a
+          good time to build up some stock.
+        </p>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          Easy houseplants like pothos or monstera almost always find a buyer,
+          especially among beginners. Rare and variegated plants sell more
+          slowly but fetch more. Vegetable plants and seeds go best in early
+          spring, just before planting season. Autumn and winter are quieter,
+          and houseplants are what mostly sells then.
+        </p>
+
+        <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
+          Shipping a plant safely
+        </h2>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          If you can, let the buyer pick the plant up. If it has to go by post,
+          a bit of preparation usually gets it there in one piece.
+        </p>
+        <ul className="mb-8 list-disc space-y-4 pl-6 text-lg leading-7 text-gray-700">
+          <li>
+            Don&apos;t water the day before shipping. Slightly damp soil is
+            enough, and a wet plant rots faster in a dark box.
+          </li>
+          <li>
+            Put a plastic bag over the pot and tie it around the stem so no soil
+            ends up loose in the box.
+          </li>
+          <li>
+            Wedge the pot in with scrunched-up newspaper so nothing can move,
+            and write &apos;fragile&apos; and &apos;this way up&apos; on the
+            box.
+          </li>
+          <li>
+            Wrap cuttings without a pot in a damp paper towel, then put them in
+            a small bag.
+          </li>
+          <li>
+            Ship early in the week so your parcel doesn&apos;t spend the weekend
+            in a sorting centre. When it&apos;s freezing, wait a few days or add
+            a heat pack.
+          </li>
+        </ul>
+
+        <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
           Rules once you sell more
         </h2>
         <p className="mb-8 text-lg leading-7 text-gray-700">
@@ -104,13 +152,35 @@ const SellPlants = () => (
           plant rescue can find it a new home.
         </p>
 
+        <h2 className="mb-6 mt-12 text-2xl font-semibold text-gray-900">
+          Frequently asked questions
+        </h2>
+        <h3 className="mb-3 mt-8 text-xl font-semibold text-gray-900">
+          How do I set a price?
+        </h3>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          Start by looking up what the same plant in the same size is selling
+          for. A rooted cutting is worth more than an unrooted one, and a plant
+          with lots of leaves more than one with a single leaf. You can ask more
+          for variegated and rare plants, and a nice decorative pot adds to the
+          price. If you really don&apos;t know, set your price a little high and
+          let buyers make an offer.
+        </p>
+        <h3 className="mb-3 mt-8 text-xl font-semibold text-gray-900">
+          Are there plants I&apos;m not allowed to sell?
+        </h3>
+        <p className="mb-8 text-lg leading-7 text-gray-700">
+          Yes. Some invasive species are on a European list and can&apos;t be
+          sold, swapped or given away, such as water hyacinth and giant hogweed.
+          Once they get into the wild, they crowd out native plants. If
+          you&apos;re unsure about a plant, look it up on that list before you
+          list it.
+        </p>
+
         {/* Call to action */}
         <div className="mt-16 flex flex-col items-center gap-4">
           <Link href="/get-plantative/">
             <Button size="lg">Download Plantative</Button>
-          </Link>
-          <Link href="/buy-plants/" className="text-gray-700 underline">
-            Looking to buy plants? Here&apos;s how
           </Link>
         </div>
       </div>
