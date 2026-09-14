@@ -105,11 +105,11 @@ const SearchableVerticalFeatureRow = (
 
             <div className="mt-6 flex justify-center gap-4">
               {props.href && (
-                <Button size="md" href={props.href}>
+                <Button href={props.href}>
                   {translations[props.language].features.buttons.moreInfo}
                 </Button>
               )}
-              <Button outline size="md" onClick={handleSearch}>
+              <Button outline onClick={handleSearch}>
                 {translations[props.language].features.search.searchButton}
               </Button>
             </div>
